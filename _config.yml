@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Ye Tao - Academic Homepage"
 title_separator          : "-"
 name                     : &name "Ye Tao"
-description              : &description "Master of Science in Engineering"
+description              : &description "Master of Engineering"
 url                      : https://momoyatw.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "momoyatw/momoyatw.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Ye Tao"
   avatar           : "profile.png"
-  bio              : "Master of Science Student, Beihang University"
+  bio              : "Master of Engineering Student, Beihang University"
   location         : "Beijing, China"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
