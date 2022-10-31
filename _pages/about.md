@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Master of Science Student in *Computer Science* at State Key Laboratory of Virtual Reality Technology and Systems, Beihang University.
+I am a Master of Engineering Student in *Computer  Technology* at State Key Laboratory of Virtual Reality Technology and Systems, Beihang University.
 My research interests include computer vision, computer graphics, virtual reality, etc.
 
 ### 🔥 News
@@ -17,7 +17,7 @@ My research interests include computer vision, computer graphics, virtual realit
 ### 🎓 Education
 - **[Beihang University(BUAA)](https://buaa.edu.cn/)**, Beijing, China
   
-  M.Sc. in Engineering, [School of Computer Science and Engineering](http://scse.buaa.edu.cn/), *2022 - Present*
+  M.E. in Computer Technology, [School of Computer Science and Engineering](http://scse.buaa.edu.cn/), *2022 - Present*
 - **[Northwestern Polytechnical University](https://www.nwpu.edu.cn/)**, Xi'an, China
   
   B.E. in Computer Science, [School of Computer Science](https://jsj.nwpu.edu.cn/), *2018 - 2022*
