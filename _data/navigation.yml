@@ -1,19 +1,25 @@
 # main links links
 main:
-  - title: "News"
-    url: "/#-news"
+  # - title: "News"
+  #   url: "/#-news"
   
-  - title: "Education"
-    url: "/#-education"
+  # - title: "Education"
+  #   url: "/#-education"
     
-  - title: "Research Interest"
-    url: "/#-research-interests"
+  # - title: "Research Interest"
+  #   url: "/#-research-interests"
   
-  - title: "Publications"
-    url: "/#-publications"
+  # - title: "Publications"
+  #   url: "/#-publications"
     
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
+  # - title: "Honors and Awards"
+  #   url: "/#-honors-and-awards"
     
-  - title: "Correspondence"
-    url: "/#-correspondence"
+  # - title: "Correspondence"
+  #   url: "/#-correspondence"
+  
+  - title: "English"
+    url: /
+  
+  - title: "Simplified Chinese"
+    url: /about_sc
