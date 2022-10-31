@@ -2,24 +2,21 @@
 main:
   # - title: "News"
   #   url: "/#-news"
-  
+
   # - title: "Education"
   #   url: "/#-education"
-    
+
   # - title: "Research Interest"
   #   url: "/#-research-interests"
-  
+
   # - title: "Publications"
   #   url: "/#-publications"
-    
+
   # - title: "Honors and Awards"
   #   url: "/#-honors-and-awards"
-    
+
   # - title: "Correspondence"
   #   url: "/#-correspondence"
-  
-  - title: "English"
+
+  - title: "About Me"
     url: /
-  
-  - title: "Simplified Chinese"
-    url: /about_sc
