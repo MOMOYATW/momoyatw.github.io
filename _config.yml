@@ -7,7 +7,7 @@
 
 # Site Settings
 locale: "en-US"
-title: "Ye Tao - Academic Homepage"
+title: "Ye Tao's Academic Homepage"
 title_separator: "-"
 name: &name "Ye Tao"
 description: &description "Master of Engineering Student"
