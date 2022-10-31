@@ -1,19 +1,19 @@
 # main links links
 main:
   - title: "News"
-    url: "/#-News"
+    url: "/#-news"
   
   - title: "Education"
-    url: "/#-Education"
+    url: "/#-education"
     
   - title: "Research Interest"
-    url: "/#-Research-Interests"
+    url: "/#-research-interests"
   
   - title: "Publications"
-    url: "/#-Publications"
+    url: "/#-publications"
     
   - title: "Honors and Awards"
-    url: "/#-Honors-and-Awards"
+    url: "/#-honors-and-awards"
     
   - title: "Correspondence"
-    url: "/#-Correspondence"
+    url: "/#-correspondence"
