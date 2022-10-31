@@ -25,7 +25,9 @@ My research interests include computer vision, computer graphics, virtual realit
 
 ### 📖 Publications
 
+
 ### 🏆 Honors and Awards
+- 2019 - 2022, School Outstanding Student Scholarship of Northwestern Polytechnical University
 
 ### 📫 Correspondence
 - Email: [davytao@buaa.edu.cn](mailto:davytao@buaa.edu.cn)
