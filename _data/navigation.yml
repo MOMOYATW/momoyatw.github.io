@@ -1,10 +1,19 @@
 # main links links
 main:
   - title: "News"
-    url: /#news
+    url: "/#🔥 News"
   
   - title: "Education"
-    url: /#education
+    url: "/#🎓 Education"
     
   - title: "Research Interest"
-    url: /#resarch interest
+    url: "/#🔭 Research Interests"
+  
+  - title: "Publications"
+    url: "/#📖 Publications"
+    
+  - title: "Honors and Awards"
+    url: "/#🏆 Honors and Awards"
+    
+  - title: "Correspondence"
+    url: "/#📫 Correspondence"
