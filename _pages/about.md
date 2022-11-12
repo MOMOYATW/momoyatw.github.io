@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Me"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,11 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I am a Master of Engineering Student in *Computer  Technology* at State Key Laboratory of Virtual Reality Technology and Systems, Beihang University.
+Hi, I am Ye Tao, a Master of Engineering Student in *Computer  Technology* at State Key Laboratory of Virtual Reality Technology and Systems, Beihang University.
 My research interests include computer vision, computer graphics, virtual reality, etc.
 
 ### 🔥 News
-
 
 ### 🎓 Education
 - **[Beihang University(BUAA)](https://buaa.edu.cn/)**, Beijing, China
