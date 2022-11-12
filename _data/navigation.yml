@@ -18,5 +18,5 @@ main:
   # - title: "Correspondence"
   #   url: "/#-correspondence"
 
-  - title: "About Me"
-    url: /
+  # - title: "About Me"
+  #   url: /
