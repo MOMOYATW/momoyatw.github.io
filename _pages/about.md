@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I am Ye Tao, a Master of Engineering Student in *Computer  Technology* at State Key Laboratory of Virtual Reality Technology and Systems, Beihang University.
+Hi, I am Ye Tao, a Master Student in *Computer  Technology* at State Key Laboratory of Virtual Reality Technology and Systems, Beihang University.
 My research interests include computer vision, computer graphics, virtual reality, etc.
 
 ### 🔥 News
@@ -16,7 +16,7 @@ My research interests include computer vision, computer graphics, virtual realit
 ### 🎓 Education
 - **[Beihang University(BUAA)](https://buaa.edu.cn/)**, Beijing, China
   
-  M.E. in Computer Technology, [School of Computer Science and Engineering](http://scse.buaa.edu.cn/), *2022 - Present*
+  Master Student in Computer Technology, [School of Computer Science and Engineering](http://scse.buaa.edu.cn/), *2022 - Present*
 - **[Northwestern Polytechnical University(NWPU)](https://www.nwpu.edu.cn/)**, Xi'an, China
   
   B.E. in Computer Science, [School of Computer Science](https://jsj.nwpu.edu.cn/), *2018 - 2022*
