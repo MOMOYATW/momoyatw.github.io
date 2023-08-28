@@ -14,10 +14,10 @@ My research interests include computer vision, computer graphics, virtual realit
 ### 🔥 News
 
 ### 🎓 Education
-- **[Beihang University(BUAA)](https://buaa.edu.cn/)**, Beijing, China
+- **[Beihang University (BUAA)](https://buaa.edu.cn/)**, Beijing, China
   
   Master Student in Computer Technology, [School of Computer Science and Engineering](http://scse.buaa.edu.cn/), *2022 - Present*
-- **[Northwestern Polytechnical University(NWPU)](https://www.nwpu.edu.cn/)**, Xi'an, China
+- **[Northwestern Polytechnical University (NWPU)](https://www.nwpu.edu.cn/)**, Xi'an, China
   
   B.E. in Computer Science, [School of Computer Science](https://jsj.nwpu.edu.cn/), *2018 - 2022*
 
