@@ -80,7 +80,7 @@ analytics:
 author:
   name: "Ye Tao"
   avatar: "profile.png"
-  bio: "Master of Engineering Student, Beihang University"
+  bio: "Master Student, Beihang University"
   location: "Beijing, China"
   employer:
   pubmed:
@@ -101,7 +101,7 @@ author:
   impactstory: #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm:
   linkedin:
-  orcid:
+  orcid: "0009-0004-5923-0692"
   pinterest:
   soundcloud:
   stackoverflow: # http://stackoverflow.com/users/123456/username
