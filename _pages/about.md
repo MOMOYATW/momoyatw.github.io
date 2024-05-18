@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Hi, I am Ye Tao, a Master Student in *Computer  Technology* at State Key Laboratory of Virtual Reality Technology and Systems, Beihang University.
-My research interests include computer vision, computer graphics, virtual reality, etc.
+My research interests include computer vision, computer graphics, generative model, etc.
 
 ### 🔥 News
 
@@ -25,10 +25,10 @@ My research interests include computer vision, computer graphics, virtual realit
 ### 🔭 Research Interests
 - Computer Vision
 - Computer Graphics
-- Virtual Reality
+- Generative Model
 
 ### 📖 Publications
-
+- Shi, Yahao, **Ye Tao**, Mingjia Yang, Yun Liu, Li Yi, and Bin Zhou. "Articulated Motion-Aware NeRF for 3D Dynamic Appearance and Geometry Reconstruction by Implicit Motion States." IEEE Transactions on Visualization and Computer Graphics (2024).
 
 ### 🏆 Honors and Awards
 - **2019 - 2022**, School Outstanding Student Scholarship of Northwestern Polytechnical University
