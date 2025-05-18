@@ -28,6 +28,7 @@ My research interests include computer vision, computer graphics, generative mod
 - Generative Model
 
 ### 📖 Publications
+- **Tao, Ye**, Jiawei Zhang, Yahao Shi, Dongqing Zou, and Bin Zhou. "GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation." arXiv preprint arXiv:2503.06136 (2025).
 - Shi, Yahao, **Ye Tao**, Mingjia Yang, Yun Liu, Li Yi, and Bin Zhou. "Articulated Motion-Aware NeRF for 3D Dynamic Appearance and Geometry Reconstruction by Implicit Motion States." IEEE Transactions on Visualization and Computer Graphics (2024).
 
 ### 🏆 Honors and Awards
