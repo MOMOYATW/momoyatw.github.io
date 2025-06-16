@@ -8,15 +8,17 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I am Ye Tao, a Master Student in *Computer  Technology* at State Key Laboratory of Virtual Reality Technology and Systems, Beihang University.
-My research interests include computer vision, computer graphics, generative model, etc.
+I am currently a Ph.D. student at CityU, co-advised by Prof. Dapeng Wu and Prof. Junhui Hou. My research focuses on Computer Vision, 3D Reconstruction, and Generative Models.
 
 ### 🔥 News
 
 ### 🎓 Education
+- **[City University of Hong Kong (CityU)](https://www.cityu.edu.hk/)**, Hong Kong SAR, China
+
+  Ph.D. Student, [Department of Computer Science](https://www.cs.cityu.edu.hk/), *2025 - Present*
 - **[Beihang University (BUAA)](https://buaa.edu.cn/)**, Beijing, China
   
-  Master Student in Computer Technology, [School of Computer Science and Engineering](http://scse.buaa.edu.cn/), *2022 - Present*
+  M.E. in Computer Technology, [School of Computer Science and Engineering](http://scse.buaa.edu.cn/), *2022 - 2025*
 - **[Northwestern Polytechnical University (NWPU)](https://www.nwpu.edu.cn/)**, Xi'an, China
   
   B.E. in Computer Science, [School of Computer Science](https://jsj.nwpu.edu.cn/), *2018 - 2022*
