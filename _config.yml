@@ -7,9 +7,9 @@
 
 # Site Settings
 locale: "en-US"
-title: "Ye Tao's Homepage"
+title: "Ye TAO's Homepage"
 title_separator: "-"
-name: &name "Ye Tao"
+name: &name "Ye TAO"
 description: &description "Ph.D. Student"
 url: https://davytao.me # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
