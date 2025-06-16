@@ -13,7 +13,7 @@ I am currently a Ph.D. student at CityU, co-advised by Prof. Dapeng Wu and Prof.
 ### 🔥 News
 
 ### 🎓 Education
-- **[City University of Hong Kong (CityU)](https://www.cityu.edu.hk/)**, Hong Kong SAR, China
+- **[City University of Hong Kong (CityUHK)](https://www.cityu.edu.hk/)**, Hong Kong SAR, China
 
   Ph.D. Student, [Department of Computer Science](https://www.cs.cityu.edu.hk/), *2025 - Present*
 - **[Beihang University (BUAA)](https://buaa.edu.cn/)**, Beijing, China
