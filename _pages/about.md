@@ -11,6 +11,7 @@ redirect_from:
 I am currently a Ph.D. student at CityU, co-advised by Prof. Dapeng Wu and Prof. Junhui Hou. My research focuses on Computer Vision, 3D Reconstruction, and Generative Models.
 
 ### 🔥 News
+🎉 Our paper “GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation” has been accepted to ICCV 2025!
 
 ### 🎓 Education
 - **[City University of Hong Kong (CityUHK)](https://www.cityu.edu.hk/)**, Hong Kong SAR, China
@@ -30,7 +31,7 @@ I am currently a Ph.D. student at CityU, co-advised by Prof. Dapeng Wu and Prof.
 - Generative Model
 
 ### 📖 Publications
-- **Tao, Ye**, Jiawei Zhang, Yahao Shi, Dongqing Zou, and Bin Zhou. "GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation." arXiv preprint arXiv:2503.06136 (2025).
+- **Tao, Ye**, Jiawei Zhang, Yahao Shi, Dongqing Zou, and Bin Zhou. "GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation." In Proceedings of the IEEE/CVF International Conference on Computer Vision (2025).
 - Shi, Yahao, **Ye Tao**, Mingjia Yang, Yun Liu, Li Yi, and Bin Zhou. "Articulated Motion-Aware NeRF for 3D Dynamic Appearance and Geometry Reconstruction by Implicit Motion States." IEEE Transactions on Visualization and Computer Graphics (2024).
 
 ### 🏆 Honors and Awards
