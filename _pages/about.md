@@ -11,7 +11,7 @@ redirect_from:
 I am currently a Ph.D. student at CityU, co-advised by Prof. Dapeng Wu and Prof. Junhui Hou. My research focuses on Computer Vision, 3D Reconstruction, and Generative Models.
 
 ### 🔥 News
-- 🎉 Our paper “**GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation**” has been accepted to **ICCV 2025**!
+- [2025.06] 🎉 Our paper “**GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation**” has been accepted to **ICCV 2025**!
 
 ### 🎓 Education
 - **[City University of Hong Kong (CityUHK)](https://www.cityu.edu.hk/)**, Hong Kong SAR, China
