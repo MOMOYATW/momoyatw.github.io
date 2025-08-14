@@ -38,4 +38,4 @@ I am currently a Ph.D. student at CityU, co-advised by Prof. Dapeng Wu and Prof.
 - **2019 - 2022**, School Outstanding Student Scholarship of Northwestern Polytechnical University
 
 ### 📫 Correspondence
-- Email: [davytao@buaa.edu.cn](mailto:davytao@buaa.edu.cn)
+- Email: [ye.tao@my.cityu.edu.hk](mailto:ye.tao@my.cityu.edu.hk)
