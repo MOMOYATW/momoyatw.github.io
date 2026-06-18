@@ -11,6 +11,7 @@ redirect_from:
 I am currently a Ph.D. student at CityUHK, co-advised by [Prof. Dapeng Wu](https://www.cs.cityu.edu.hk/~dapengwu/) and [Prof. Junhui Hou](https://sites.google.com/site/junhuihoushomepage/biography). My research focuses on Computer Vision, Computer Graphics, and Generative Model.
 
 ### 🔥 News
+- [2026.06] 🎉 Our paper "**MotionDreamer: Universal Skeletal Motion Generation for 3D Rigged Shapes**" has been accepted to **ECCV 2026**!
 - [2025.06] 🎉 Our paper “**GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation**” has been accepted to **ICCV 2025**!
 
 ### 🎓 Education
@@ -31,6 +32,7 @@ I am currently a Ph.D. student at CityUHK, co-advised by [Prof. Dapeng Wu](https
 - Generative Model
 
 ### 📖 Publications
+- **Ye Tao**, Yuxin Yao, Kendong Liu, Dapeng Wu, and Junhui Hou. "MotionDreamer: Universal Skeletal Motion Generation for 3D Rigged Shapes." In *European Conference on Computer Vision (ECCV), 2026.*
 - **Ye Tao**, Jiawei Zhang, Yahao Shi, Dongqing Zou, and Bin Zhou. "GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation." In *Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)*, 2025.
 - Yahao Shi, **Ye Tao**, Mingjia Yang, Yun Liu, Li Yi, and Bin Zhou. "Articulated Motion-Aware NeRF for 3D Dynamic Appearance and Geometry Reconstruction by Implicit Motion States." *IEEE Transactions on Visualization and Computer Graphics (TVCG)*, 2024.
 
