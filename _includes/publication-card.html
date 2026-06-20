@@ -1,0 +1,49 @@
+{% include base_path %}
+
+{% assign pub = include.publication %}
+{% if pub.teaser %}
+  {% assign teaser = pub.teaser %}
+{% else %}
+  {% assign teaser = site.teaser | default: "500x300.png" %}
+{% endif %}
+
+<article class="pub-card">
+  <div class="pub-card__teaser">
+    {% if pub.links.size > 0 %}
+      {% assign first_link = pub.links | first %}
+      <a href="{{ first_link.url }}" target="_blank" rel="noopener noreferrer">
+    {% endif %}
+    <img src=
+      {% if teaser contains "://" %}
+        "{{ teaser }}"
+      {% else %}
+        "{{ teaser | prepend: '/images/' | prepend: base_path }}"
+      {% endif %}
+      alt="{{ pub.title | strip_html | escape }}"
+      loading="lazy">
+    {% if pub.links.size > 0 %}
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="pub-card__body">
+    <h3 class="pub-card__title">{{ pub.title }}</h3>
+
+    <p class="pub-card__authors">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+
+    <p class="pub-card__venue">
+      <em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}
+    </p>
+
+    {% if pub.links.size > 0 %}
+      <div class="pub-card__links">
+        {% for link in pub.links %}
+          <a class="pub-card__link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+            {% include publication-link-icon.html icon=link.icon label=link.label %}
+            {{ link.label }}
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</article>

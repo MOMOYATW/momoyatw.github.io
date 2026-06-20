@@ -1,0 +1,7 @@
+{% include base_path %}
+
+<div class="pub-list">
+  {% for pub in site.data.publications %}
+    {% include publication-card.html publication=pub %}
+  {% endfor %}
+</div>

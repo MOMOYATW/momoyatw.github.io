@@ -1,0 +1,38 @@
+- title: "MotionDreamer: Universal Skeletal Motion Generation for 3D Rigged Shapes"
+  authors: "**Ye Tao**, Yuxin Yao, Kendong Liu, Dapeng Wu, Junhui Hou"
+  venue: "European Conference on Computer Vision (ECCV)"
+  year: 2026
+  teaser: publications/skelmo-teaser.gif
+  links:
+    - label: Project
+      url: https://research.davytao.me/skelmo
+      icon: fas fa-home
+    - label: Paper
+      url: https://arxiv.org/abs/2606.01518
+      icon: fas fa-file-pdf
+
+- title: "GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation"
+  authors: "**Ye Tao**, Jiawei Zhang, Yahao Shi, Dongqing Zou, Bin Zhou"
+  venue: "IEEE/CVF International Conference on Computer Vision (ICCV)"
+  year: 2025
+  teaser: publications/gsv3d.png
+  links:
+    - label: Paper
+      url: https://openaccess.thecvf.com/content/ICCV2025/html/Tao_GSV3D_Gaussian_Splatting-based_Geometric_Distillation_with_Stable_Video_Diffusion_for_ICCV_2025_paper.html
+      icon: fas fa-file-pdf
+    - label: Code
+      url: https://github.com/MOMOYATW/GSV3D
+      icon: fab fa-github
+    - label: arXiv
+      url: https://arxiv.org/abs/2503.06136
+      icon: fas fa-external-link-alt
+
+- title: "Articulated Motion-Aware NeRF for 3D Dynamic Appearance and Geometry Reconstruction by Implicit Motion States"
+  authors: "Yahao Shi, **Ye Tao**, Mingjia Yang, Yun Liu, Li Yi, Bin Zhou"
+  venue: "IEEE Transactions on Visualization and Computer Graphics (TVCG)"
+  year: 2024
+  teaser: publications/motionawarenerf.png
+  links:
+    - label: Paper
+      url: https://doi.org/10.1109/TVCG.2024.3400830
+      icon: fas fa-file-pdf

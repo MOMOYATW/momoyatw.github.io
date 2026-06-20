@@ -1,0 +1,130 @@
+/* ==========================================================================
+   PUBLICATION CARDS
+   ========================================================================== */
+
+.pub-list {
+  margin: 1.5em 0 2em;
+}
+
+.pub-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1.75em;
+  padding: 1em;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $body-color;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    border-color: mix($primary-color, $border-color, 35%);
+    box-shadow: 0 4px 16px rgba(#000, 0.08);
+  }
+
+  @include breakpoint($small) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.25em;
+  }
+}
+
+.pub-card__teaser {
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: $border-radius;
+  background: $lighter-gray;
+
+  @include breakpoint($small) {
+    width: 280px;
+  }
+
+  @include breakpoint($medium) {
+    width: 340px;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.25s ease;
+  }
+
+  &:hover img {
+    opacity: 0.92;
+  }
+}
+
+.pub-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-card__title {
+  margin: 0 0 0.4em;
+  font-family: $sans-serif-narrow;
+  font-size: $type-size-4;
+  line-height: 1.3;
+  border-bottom: none;
+}
+
+.pub-card__authors {
+  margin: 0 0 0.35em;
+  font-size: $type-size-5;
+  color: $text-color;
+  line-height: 1.5;
+}
+
+.pub-card__venue {
+  margin: 0 0 0.75em;
+  font-size: $type-size-6;
+  color: $gray;
+  line-height: 1.4;
+}
+
+.pub-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.pub-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.3em 0.75em;
+  font-size: $type-size-6;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  color: $text-color;
+  background: $lighter-gray;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+
+  .pub-card__icon {
+    width: 0.95em;
+    height: 0.95em;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    color: #fff;
+    background: $primary-color;
+    border-color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+.page__content {
+  .pub-card__title {
+    margin-top: 0;
+  }
+}
