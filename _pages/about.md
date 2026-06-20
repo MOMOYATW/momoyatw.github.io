@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a Ph.D. student at CityUHK, co-advised by [Prof. Dapeng Wu](https://www.cs.cityu.edu.hk/~dapengwu/) and [Prof. Junhui Hou](https://sites.google.com/site/junhuihoushomepage/biography). My research focuses on Computer Vision, Computer Graphics, and Generative Model.
+I am a Ph.D. student in Computer Science at City University of Hong Kong, co-advised by [Prof. Dapeng Wu](https://www.cs.cityu.edu.hk/~dapengwu/) and [Prof. Junhui Hou](https://sites.google.com/site/junhuihoushomepage/biography). My research lies at the intersection of computer vision, computer graphics, and generative models, with a particular focus on 3D/4D content generation, articulated motion generation, and character animation.
 
 ### 🔥 News
 - [2026.06] 🎉 Our paper "**MotionDreamer: Universal Skeletal Motion Generation for 3D Rigged Shapes**" has been accepted to **ECCV 2026**!
