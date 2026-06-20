@@ -277,5 +277,11 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    .author__urls {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+    }
   }
 }
