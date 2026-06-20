@@ -235,3 +235,47 @@
     }
   }
 }
+
+@media (max-width: #{$large - 1px}) {
+  .sidebar {
+    text-align: center;
+  }
+
+  .sidebar [itemtype="http://schema.org/Person"] {
+    display: block;
+    text-align: center;
+  }
+
+  .sidebar .author__avatar img {
+    display: block;
+    width: 140px;
+    max-width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  .author__avatar {
+    display: block;
+    width: auto;
+    margin: 0 auto 0.75em;
+  }
+
+  .author__content {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 0.75em;
+  }
+
+  .author__urls-wrapper {
+    display: block;
+    text-align: center;
+
+    button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
