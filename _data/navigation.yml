@@ -1,22 +1,25 @@
 # main links links
 main:
+  - title: "About"
+    url: "/#about"
+
   - title: "News"
     url: "/#-news"
+
+  - title: "Selected Publications"
+    url: "/#-selected-publications"
+
+  - title: "Research Interests"
+    url: "/#-research-interests"
 
   - title: "Education"
     url: "/#-education"
 
-  - title: "Research Interest"
-    url: "/#-research-interests"
+  - title: "Honors & Awards"
+    url: "/#-honors--awards"
 
-  - title: "Publications"
-    url: "/#-publications"
-
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
-
-  - title: "Correspondence"
-    url: "/#-correspondence"
+  - title: "Contact"
+    url: "/#-contact"
 
   # - title: "About Me"
   #   url: /

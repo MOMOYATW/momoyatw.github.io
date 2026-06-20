@@ -127,4 +127,35 @@
   .pub-card__title {
     margin-top: 0;
   }
+
+  .education-list {
+    .education-item {
+      display: list-item;
+      list-style-position: outside;
+      margin-bottom: 0.5em;
+      line-height: 1.45;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .education-item__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+
+    .education-item__content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .education-item__date {
+      flex-shrink: 0;
+      text-align: right;
+      white-space: nowrap;
+    }
+  }
 }
