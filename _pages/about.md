@@ -10,9 +10,10 @@ redirect_from:
 
 ### About
 
-I am a Ph.D. student in Computer Science at City University of Hong Kong, co-advised by [Prof. Dapeng Wu](https://www.cs.cityu.edu.hk/~dapengwu/) and [Prof. Junhui Hou](https://sites.google.com/site/junhuihoushomepage/biography). My research lies at the intersection of computer vision, computer graphics, and generative models, with a particular focus on 3D/4D content generation, articulated motion generation, and character animation.
+I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-advised by [Prof. Dapeng Wu](https://www.cs.cityu.edu.hk/~dapengwu/) and [Prof. Junhui Hou](https://sites.google.com/site/junhuihoushomepage/biography). My research lies at the intersection of computer vision, computer graphics, and generative models, with a particular focus on 3D/4D content generation, articulated motion generation, and character animation.
 
 ### 🔥 News
+- [2026.07] 🎉 I passed my Ph.D. qualifying examination and advanced to Ph.D. candidacy!
 - [2026.06] 🎉 Our paper "**SkelMo: Universal Skeletal Motion Generation for 3D Rigged Shapes**" has been accepted to **ECCV 2026**!
 - [2025.06] 🎉 Our paper "**GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation**" has been accepted to **ICCV 2025**!
 
@@ -32,7 +33,7 @@ I am a Ph.D. student in Computer Science at City University of Hong Kong, co-adv
     <div class="education-item__inner">
       <div class="education-item__content">
         <div><strong><a href="https://www.cityu.edu.hk/">City University of Hong Kong (CityUHK)</a></strong>, Hong Kong SAR, China</div>
-        <div>Ph.D. Student, <a href="https://www.cs.cityu.edu.hk/">Department of Computer Science</a></div>
+        <div>Ph.D. Candidate, <a href="https://www.cs.cityu.edu.hk/">Department of Computer Science</a></div>
       </div>
       <div class="education-item__date"><em>2025 – Present</em></div>
     </div>

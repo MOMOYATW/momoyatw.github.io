@@ -10,7 +10,7 @@ locale: "en-US"
 title: "Ye Tao's Homepage"
 title_separator: "-"
 name: &name "Ye Tao"
-description: &description "Ph.D. Student"
+description: &description "Ph.D. Candidate"
 url: https://davytao.me # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "momoyatw/momoyatw.github.io"
@@ -80,7 +80,7 @@ analytics:
 author:
   name: "Ye Tao"
   avatar: "avatar-2025.jpg"
-  bio: "Ph.D. Student, City University of Hong Kong"
+  bio: "Ph.D. Candidate, City University of Hong Kong"
   location: "Hong Kong SAR, China"
   employer:
   pubmed:
