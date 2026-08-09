@@ -3,6 +3,9 @@ main:
   - title: "About"
     url: "/#about"
 
+  - title: "CV"
+    url: "/files/Ye_Tao_Academic_CV.pdf"
+
   - title: "News"
     url: "/#-news"
 
