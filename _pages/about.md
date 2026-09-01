@@ -59,6 +59,7 @@ I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-a
 </ul>
 
 ### 🏆 Honors & Awards
+- **2026 – 2027**, Outstanding Academic Performance Award for Research Degree Students, City University of Hong Kong
 - **2023 – 2024**, Second-Class Academic Scholarship, School of Computer Science and Engineering, Beihang University (BUAA)
 - **2019 – 2022**, School Outstanding Student Scholarship, Northwestern Polytechnical University (NWPU)
 
