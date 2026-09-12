@@ -61,7 +61,7 @@ I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-a
 ### 🏆 Honors & Awards
 - **2026**, Outstanding Academic Performance Award, City University of Hong Kong
 - **2023 – 2024**, Second-Class Academic Scholarship, School of Computer Science and Engineering, Beihang University
-- **2019 – 2022**, School Outstanding Student Scholarship, Northwestern Polytechnical University
+- **2019 – 2022**, Outstanding Student Scholarship, School of Computer Science, Northwestern Polytechnical University
 
 ### 📫 Contact
 - Email: [ye.tao at my.cityu.edu.hk](mailto:ye.tao@my.cityu.edu.hk)
