@@ -10,6 +10,9 @@
     - label: Paper
       url: https://arxiv.org/abs/2606.01518
       icon: fas fa-file-pdf
+    - label: Code
+      url: https://github.com/MOMOYATW/SkelMo
+      icon: fab fa-github
 
 - title: "GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation"
   authors: "**Ye Tao**, Jiawei Zhang, Yahao Shi, Dongqing Zou, Bin Zhou"
@@ -23,9 +26,6 @@
     - label: Code
       url: https://github.com/MOMOYATW/GSV3D
       icon: fab fa-github
-    - label: arXiv
-      url: https://arxiv.org/abs/2503.06136
-      icon: fas fa-external-link-alt
 
 - title: "Articulated Motion-Aware NeRF for 3D Dynamic Appearance and Geometry Reconstruction by Implicit Motion States"
   authors: "Yahao Shi, **Ye Tao**, Mingjia Yang, Yun Liu, Li Yi, Bin Zhou"
