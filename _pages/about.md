@@ -67,7 +67,7 @@ My research focuses on geometry-aware generative models for articulated 3D/4D ob
     <div class="education-item__inner">
       <div class="education-item__content">
         <div><strong><a href="https://en.nwpu.edu.cn/">Northwestern Polytechnical University (NWPU)</a></strong>, Xi'an, China</div>
-        <div>B.E. in Computer Science, <a href="https://jsj.nwpu.edu.cn/">School of Computer Science</a></div>
+        <div>B.E. in Computer Science, <a href="https://jsj.nwpu.edu.cn/enweb/HOME.htm">School of Computer Science</a></div>
       </div>
       <div class="education-item__date"><em>2018 – 2022</em></div>
     </div>
