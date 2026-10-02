@@ -12,6 +12,13 @@ redirect_from:
 
 I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-advised by [Prof. Dapeng Wu](https://www.cs.cityu.edu.hk/~dapengwu/) and [Prof. Junhui Hou](https://sites.google.com/site/junhuihoushomepage/biography). My research lies at the intersection of computer vision, computer graphics, and generative models, with a particular focus on 3D/4D content generation, articulated motion generation, and character animation.
 
+<div class="research-tags" aria-label="Research keywords">
+  <span>3D/4D Generation</span>
+  <span>Articulated Motion</span>
+  <span>Character Animation</span>
+  <span>Geometry-aware Vision</span>
+</div>
+
 ### 🔥 News
 - [2026.07] 🎉 I passed my Ph.D. qualifying examination and advanced to Ph.D. candidacy!
 - [2026.06] 🎉 Our paper "**SkelMo: Universal Skeletal Motion Generation for 3D Rigged Shapes**" has been accepted to **ECCV 2026**!
