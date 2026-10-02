@@ -6,7 +6,11 @@
       <nav id="site-nav" class="greedy-nav">
         <button type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav-hidden-links"><div class="navicon" aria-hidden="true"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg">
+            <a class="masthead__brand" href="{{ base_path }}/" aria-label="Home">
+              <img class="masthead__brand-mark" src="{{ base_path }}/images/yt-monogram.svg?v=yblue20261002" alt="" width="26" height="26">
+            </a>
+          </li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}

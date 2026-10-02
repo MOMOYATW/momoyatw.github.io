@@ -7,7 +7,7 @@
 
 # Site Settings
 locale: "en-US"
-title: "Ye Tao's Homepage"
+title: "Ye Tao"
 title_separator: "-"
 name: &name "Ye Tao"
 description: &description "Personal homepage of Ye Tao, a Ph.D. candidate at City University of Hong Kong working on 3D/4D generation, articulated motion, and character animation."
@@ -86,7 +86,6 @@ author:
   name: "Ye Tao"
   avatar: "avatar-2025-320.jpg"
   bio: "Ph.D. Candidate, City University of Hong Kong"
-  location: "Hong Kong SAR, China"
   employer:
   pubmed:
   googlescholar: "https://scholar.google.com/citations?user=NfCKsjsAAAAJ&hl=en"

@@ -9,19 +9,17 @@
   margin-right: 0;
   width: 100%;
   clear: both;
-  /* sticky footer fix start */
-  position: absolute;
-  bottom: 0em;
+  position: static;
+  flex: 0 0 auto;
   height: auto;
-  /* sticky footer fix end */
   margin-top: 3em;
   color: $dark-gray;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  background-color: $lighter-gray;
-  border-top: 1px solid $light-gray;
+  background-color: mix(#fff, $primary-color, 92%);
+  border-top: 1px solid mix(#fff, $primary-color, 78%);
 
   footer {
     @include clearfix;
