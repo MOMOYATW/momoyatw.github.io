@@ -11,16 +11,23 @@
   <div class="pub-card__teaser">
     {% if pub.links.size > 0 %}
       {% assign first_link = pub.links | first %}
-      <a href="{{ first_link.url }}" target="_blank" rel="noopener noreferrer">
+      <a href="{{ first_link.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ pub.title | strip_html | escape }}">
     {% endif %}
-    <img src=
-      {% if teaser contains "://" %}
-        "{{ teaser }}"
-      {% else %}
-        "{{ teaser | prepend: '/images/' | prepend: base_path }}"
-      {% endif %}
-      alt="{{ pub.title | strip_html | escape }}"
-      loading="lazy">
+    {% capture teaser_url %}{% if teaser contains "://" %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}{% endcapture %}
+    {% if pub.video %}
+      {% capture video_url %}{% if pub.video contains "://" %}{{ pub.video }}{% else %}{{ pub.video | prepend: '/images/' | prepend: base_path }}{% endif %}{% endcapture %}
+      <video class="pub-card__video" autoplay muted loop playsinline preload="metadata" poster="{{ teaser_url | strip }}" aria-hidden="true"{% if pub.image_width %} width="{{ pub.image_width }}"{% endif %}{% if pub.image_height %} height="{{ pub.image_height }}"{% endif %}>
+        <source src="{{ video_url | strip }}" type="video/mp4">
+      </video>
+      <img class="pub-card__motion-poster" src="{{ teaser_url | strip }}" alt="" loading="lazy"{% if pub.image_width %} width="{{ pub.image_width }}"{% endif %}{% if pub.image_height %} height="{{ pub.image_height }}"{% endif %}>
+    {% else %}
+      <img src="{{ teaser_url | strip }}"
+        alt="{{ pub.title | strip_html | escape }}"
+        loading="lazy"
+        decoding="async"{% if pub.image_width %}
+        width="{{ pub.image_width }}"{% endif %}{% if pub.image_height %}
+        height="{{ pub.image_height }}"{% endif %}>
+    {% endif %}
     {% if pub.links.size > 0 %}
       </a>
     {% endif %}

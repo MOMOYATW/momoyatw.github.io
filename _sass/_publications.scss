@@ -52,7 +52,8 @@
     text-decoration: none;
   }
 
-  img {
+  img,
+  video {
     display: block;
     width: 100%;
     height: 100%;
@@ -60,8 +61,23 @@
     transition: opacity 0.25s ease;
   }
 
-  &:hover img {
+  &:hover img,
+  &:hover video {
     opacity: 0.92;
+  }
+}
+
+.pub-card__motion-poster {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pub-card__video {
+    display: none;
+  }
+
+  .pub-card__motion-poster {
+    display: block !important;
   }
 }
 
@@ -87,7 +103,7 @@
 
 .pub-card__venue {
   margin: 0 0 0.75em;
-  font-size: $type-size-6;
+  font-size: 0.875rem;
   color: $gray;
   line-height: 1.4;
 }
@@ -103,7 +119,7 @@
   align-items: center;
   gap: 0.35em;
   padding: 0.28em 0.68em;
-  font-size: $type-size-6;
+  font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.4;
   text-decoration: none;

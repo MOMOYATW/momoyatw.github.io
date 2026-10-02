@@ -1,14 +1,16 @@
 ---
 permalink: /
-title: ""
-excerpt: "About me"
+title: "Ye Tao's Homepage"
+description: "Personal homepage of Ye Tao, a Ph.D. candidate at City University of Hong Kong working on 3D/4D generation, articulated motion, and character animation."
+excerpt: "Personal homepage of Ye Tao"
+hide_title: true
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-### About
+## About
 
 I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-advised by [Prof. Dapeng Wu](https://www.cs.cityu.edu.hk/~dapengwu/) and [Prof. Junhui Hou](https://sites.google.com/site/junhuihoushomepage/biography). My research lies at the intersection of computer vision, computer graphics, and generative models, with a particular focus on 3D/4D content generation, articulated motion generation, and character animation.
 
@@ -19,21 +21,16 @@ I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-a
   <span>Geometry-aware Vision</span>
 </div>
 
-### 🔥 News
+## 🔥 News
 - [2026.07] 🎉 I passed my Ph.D. qualifying examination and advanced to Ph.D. candidacy!
 - [2026.06] 🎉 Our paper "**SkelMo: Universal Skeletal Motion Generation for 3D Rigged Shapes**" has been accepted to **ECCV 2026**!
 - [2025.06] 🎉 Our paper "**GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation**" has been accepted to **ICCV 2025**!
 
-### 📖 Selected Publications
+## 📖 Selected Publications
 
 {% include publications.html %}
 
-### 🔭 Research Interests
-- 3D/4D Generative Models
-- Articulated Motion and Character Animation
-- Geometry-aware Visual Generation
-
-### 🎓 Education
+## 🎓 Education
 
 <ul class="education-list">
   <li class="education-item">
@@ -65,10 +62,10 @@ I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-a
   </li>
 </ul>
 
-### 🏆 Honors & Awards
+## 🏆 Honors & Awards
 - **2026**, Outstanding Academic Performance Award, City University of Hong Kong
 - **2023 – 2024**, Second-Class Academic Scholarship, School of Computer Science and Engineering, Beihang University
 - **2019 – 2022**, Outstanding Student Scholarship, School of Computer Science, Northwestern Polytechnical University
 
-### 📫 Contact
+## 📫 Contact
 - Email: [ye.tao at my.cityu.edu.hk](mailto:ye.tao@my.cityu.edu.hk)

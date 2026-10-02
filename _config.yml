@@ -10,7 +10,7 @@ locale: "en-US"
 title: "Ye Tao's Homepage"
 title_separator: "-"
 name: &name "Ye Tao"
-description: &description "Ph.D. Candidate"
+description: &description "Personal homepage of Ye Tao, a Ph.D. candidate at City University of Hong Kong working on 3D/4D generation, articulated motion, and character animation."
 url: https://davytao.me # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "momoyatw/momoyatw.github.io"
@@ -62,24 +62,29 @@ facebook:
   username:
   app_id:
   publisher:
-og_image: # Open Graph/Twitter default site image
+og_image: "avatar-2025.jpg" # Open Graph/Twitter default site image
+twitter_card: "summary"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type: # Person or Organization (defaults to Person)
-  name: # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type: Person
+  name: "Ye Tao"
+  links:
+    - "https://scholar.google.com/citations?user=NfCKsjsAAAAJ&hl=en"
+    - "https://github.com/momoyatw"
+    - "https://www.linkedin.com/in/ye-tao-418b30435"
+    - "https://orcid.org/0009-0004-5923-0692"
 
 # Analytics
 analytics:
-  provider: "google-universal" # false (default), "google", "google-universal", "custom"
+  provider: false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id:
 
 # Site Author
 author:
   name: "Ye Tao"
-  avatar: "avatar-2025.jpg"
+  avatar: "avatar-2025-320.jpg"
   bio: "Ph.D. Candidate, City University of Hong Kong"
   location: "Hong Kong SAR, China"
   employer:

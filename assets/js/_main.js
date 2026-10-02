@@ -37,10 +37,12 @@ $(document).ready(function(){
       Stickyfill.rebuild();
       Stickyfill.init();
       $(".author__urls").show();
+      $(".author__urls-wrapper button").attr("aria-expanded", "true");
     } else {
       // unfix
       Stickyfill.stop();
       $(".author__urls").hide();
+      $(".author__urls-wrapper button").attr("aria-expanded", "false");
     }
   };
 
@@ -53,8 +55,11 @@ $(document).ready(function(){
   // Follow menu drop down
 
   $(".author__urls-wrapper button").on("click", function() {
-    $(".author__urls").fadeToggle("fast", function() {});
-    $(".author__urls-wrapper button").toggleClass("open");
+    var $button = $(this);
+    $(".author__urls").fadeToggle("fast", function() {
+      $button.attr("aria-expanded", $(this).is(":visible"));
+    });
+    $button.toggleClass("open");
   });
 
   // init smooth scroll
