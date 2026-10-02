@@ -8,7 +8,7 @@
       url: https://research.davytao.me/skelmo
       icon: fas fa-home
     - label: Paper
-      url: https://arxiv.org/abs/2606.01518
+      url: https://doi.org/10.1007/978-3-032-37531-5_7
       icon: fas fa-file-pdf
     - label: Code
       url: https://github.com/MOMOYATW/SkelMo
