@@ -42,7 +42,7 @@
       <em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}
     </p>
 
-    {% if pub.links.size > 0 %}
+    {% if pub.links.size > 0 or pub.tldr %}
       <div class="pub-card__links">
         {% for link in pub.links %}
           <a class="pub-card__link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
@@ -50,6 +50,19 @@
             {{ link.label }}
           </a>
         {% endfor %}
+
+        {% if pub.tldr %}
+          <button class="pub-card__link pub-card__tldr-toggle" type="button" aria-expanded="false" aria-controls="pub-tldr-{{ include.index }}">
+            TL;DR
+            <svg class="pub-card__tldr-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 8 4 4 4-4"/></svg>
+          </button>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if pub.tldr %}
+      <div class="pub-card__tldr" id="pub-tldr-{{ include.index }}" role="region" aria-label="TL;DR for {{ pub.title | strip_html | escape }}" hidden>
+        {{ pub.tldr }}
       </div>
     {% endif %}
   </div>

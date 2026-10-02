@@ -141,6 +141,7 @@
   align-items: center;
   gap: 0.35em;
   padding: 0.28em 0.68em;
+  font-family: inherit;
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.4;
@@ -162,6 +163,44 @@
     background: $primary-color;
     border-color: $primary-color;
     text-decoration: none;
+  }
+}
+
+.pub-card__tldr-toggle {
+  cursor: pointer;
+
+  &[aria-expanded="true"] {
+    color: #fff;
+    background: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.pub-card__tldr-chevron {
+  width: 0.85em;
+  height: 0.85em;
+  margin-left: 0.05em;
+  transition: transform 0.18s ease;
+}
+
+.pub-card__tldr-toggle[aria-expanded="true"] .pub-card__tldr-chevron {
+  transform: rotate(180deg);
+}
+
+.pub-card__tldr {
+  margin-top: 0.65rem;
+  padding: 0.58rem 0.72rem;
+  color: mix($text-color, $gray, 78%);
+  background: rgba($primary-color, 0.055);
+  border-left: 2px solid mix($primary-color, $border-color, 55%);
+  border-radius: 0 $border-radius $border-radius 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pub-card__tldr-chevron {
+    transition: none;
   }
 }
 
@@ -230,12 +269,19 @@
 
   @media (max-width: #{$small - 1px}) {
     .award-list li {
-      display: block;
+      display: grid;
+      grid-template-columns: 5.3rem minmax(0, 1fr);
+      gap: 0.75rem;
+      align-items: start;
+      margin-bottom: 0.8rem;
     }
 
     .award-list__date {
       display: block;
-      margin-bottom: 0.1em;
+      margin: 0;
+      padding-top: 0.05rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
     }
   }
 }

@@ -3,13 +3,23 @@
    ========================================================================== */
 
 .masthead {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: rgba($background-color, 0.98);
   border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
-  z-index: 20;
+  z-index: 30;
+
+  @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+    background: rgba($background-color, 0.92);
+    border-bottom-color: rgba($border-color, 0.65);
+    -webkit-backdrop-filter: blur(8px) saturate(108%);
+            backdrop-filter: blur(8px) saturate(108%);
+  }
 
   &__inner-wrap {
     @include container;
@@ -32,12 +42,70 @@
 }
 
 .masthead__menu {
+  position: relative;
+  padding-right: 4rem;
 
   ul {
     margin: 0;
     padding: 0;
     clear: both;
     list-style-type: none;
+  }
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  color: $primary-color;
+  background: rgba($primary-color, 0.055);
+  border: 1px solid rgba($primary-color, 0.24);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: $primary-color;
+    background: rgba($primary-color, 0.12);
+    border-color: rgba($primary-color, 0.45);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba($primary-color, 0.45);
+    outline-offset: 2px;
+  }
+}
+
+.theme-toggle__icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-toggle__icon--sun {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .masthead__menu {
+    padding-right: 0;
+  }
+
+  .theme-toggle {
+    right: 3.25rem;
   }
 }
 

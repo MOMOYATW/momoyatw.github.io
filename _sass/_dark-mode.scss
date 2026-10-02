@@ -1,0 +1,335 @@
+/* ==========================================================================
+   DARK COLOR SCHEME
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+}
+
+@media screen {
+  html[data-theme="dark"] {
+    color-scheme: dark;
+    background: #11191d;
+  }
+
+  html[data-theme="dark"] body {
+    color: #d6e0e5;
+    background: #11191d;
+  }
+
+  html[data-theme="dark"] ::selection {
+    color: #f7fafb;
+    background: #557a95;
+  }
+
+  html[data-theme="dark"] .page__content a:not(.pub-card__link) {
+    color: #d6e0e5;
+
+    &:hover,
+    &:focus-visible {
+      color: #94b9cf;
+    }
+  }
+
+  html[data-theme="dark"] hr,
+  html[data-theme="dark"] .page__content h2,
+  html[data-theme="dark"] .page__content h3,
+  html[data-theme="dark"] .page__content h4,
+  html[data-theme="dark"] .page__content h5,
+  html[data-theme="dark"] .page__content h6 {
+    border-color: #2b3a42;
+  }
+
+  html[data-theme="dark"] .page__content h2,
+  html[data-theme="dark"] .page__content h3,
+  html[data-theme="dark"] .page__content h4,
+  html[data-theme="dark"] .page__content h5,
+  html[data-theme="dark"] .page__content h6,
+  html[data-theme="dark"] .author__name,
+  html[data-theme="dark"] .pub-card__title {
+    color: #e4ebef;
+  }
+
+  html[data-theme="dark"] .masthead {
+    background: rgba(#11191d, 0.96);
+    border-color: #2b3a42;
+
+    @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+      background: rgba(#11191d, 0.9);
+      border-bottom-color: rgba(#50636c, 0.42);
+    }
+  }
+
+  html[data-theme="dark"] .greedy-nav {
+    background: transparent;
+
+    a {
+      color: #cbd7dd;
+
+      &:hover,
+      &:focus {
+        color: #94b9cf;
+      }
+    }
+
+    .visible-links a::before {
+      background: #7fa7bf;
+    }
+
+    .hidden-links {
+      background: #182329;
+      border-color: #2b3a42;
+      box-shadow: 0 0.45rem 1.2rem rgba(#000, 0.28);
+
+      a:hover {
+        background: #202d34;
+      }
+
+      &::before {
+        border-color: #2b3a42 transparent;
+      }
+
+      &::after {
+        border-color: #182329 transparent;
+      }
+
+      li {
+        border-color: #2b3a42;
+      }
+    }
+
+    button:hover,
+    button:focus-visible {
+      background: #202d34;
+    }
+
+    .navicon,
+    .navicon::before,
+    .navicon::after {
+      background: #e7eef1;
+    }
+
+    button.close .navicon {
+      background: transparent;
+    }
+  }
+
+  html[data-theme="dark"] .masthead__brand img {
+    filter: brightness(1.12) saturate(0.85);
+  }
+
+  html[data-theme="dark"] .theme-toggle {
+    color: #a9bbc4;
+    background: rgba(#7fa7bf, 0.08);
+    border-color: rgba(#7fa7bf, 0.28);
+
+    &:hover,
+    &:focus-visible {
+      color: #acd0e4;
+      background: rgba(#7fa7bf, 0.15);
+      border-color: #557a95;
+    }
+  }
+
+  html[data-theme="dark"] .theme-toggle__icon--moon {
+    display: none;
+  }
+
+  html[data-theme="dark"] .theme-toggle__icon--sun {
+    display: block;
+  }
+
+  html[data-theme="dark"] .author__avatar img {
+    border-color: #344750;
+    box-shadow: 0 0.35rem 1.1rem rgba(#000, 0.2);
+  }
+
+  html[data-theme="dark"] .home-profile {
+    border-color: #2b3a42;
+  }
+
+  html[data-theme="dark"] .home-profile__avatar img {
+    border-color: #344750;
+    box-shadow: 0 0.35rem 1.1rem rgba(#000, 0.2);
+  }
+
+  html[data-theme="dark"] .home-profile__name {
+    color: #e4ebef;
+  }
+
+  html[data-theme="dark"] .home-profile__role {
+    color: #9eafb8;
+  }
+
+  html[data-theme="dark"] .home-profile__role a,
+  html[data-theme="dark"] .home-profile__intro a,
+  html[data-theme="dark"] .home-profile__links a {
+    color: #cbd7dd;
+
+    &:hover,
+    &:focus-visible {
+      color: #94b9cf;
+    }
+  }
+
+  html[data-theme="dark"] .author__bio,
+  html[data-theme="dark"] .author__urls,
+  html[data-theme="dark"] .page__meta,
+  html[data-theme="dark"] .page__content .news-list time,
+  html[data-theme="dark"] .page__content .award-list__date {
+    color: #9eafb8;
+  }
+
+  html[data-theme="dark"] .author__urls a {
+    color: #bac8cf;
+
+    &:hover,
+    &:focus {
+      color: #94b9cf;
+    }
+  }
+
+  html[data-theme="dark"] .social-icons .fa-github,
+  html[data-theme="dark"] .social-icons .fa-github-alt,
+  html[data-theme="dark"] .social-icons .fa-github-square,
+  html[data-theme="dark"] .author__quick-links .fa-github {
+    color: #c3d0d6 !important;
+  }
+
+  html[data-theme="dark"] .author__quick-links a {
+    color: #b9c8cf;
+    background: #182329;
+    border-color: #2f414a;
+
+    &:hover,
+    &:focus {
+      color: #acd0e4;
+      background: #202d34;
+      border-color: #557a95;
+    }
+  }
+
+  html[data-theme="dark"] .pub-card {
+    background: #172126;
+    border-color: #2b3a42;
+    box-shadow: 0 0.35rem 1.15rem rgba(#000, 0.12);
+
+    &:hover {
+      border-color: #3c5360;
+      box-shadow: 0 0.4rem 1.25rem rgba(#000, 0.22);
+    }
+  }
+
+  html[data-theme="dark"] .pub-card__authors,
+  html[data-theme="dark"] .pub-card__venue {
+    color: #9eafb8;
+  }
+
+  html[data-theme="dark"] .pub-card__authors strong {
+    color: #dce5e9;
+  }
+
+  html[data-theme="dark"] .pub-card__teaser,
+  html[data-theme="dark"] .pub-card__teaser img,
+  html[data-theme="dark"] .pub-card__teaser video {
+    background: #fff;
+  }
+
+  html[data-theme="dark"] .pub-card__teaser img,
+  html[data-theme="dark"] .pub-card__teaser video {
+    filter: brightness(0.85);
+  }
+
+  html[data-theme="dark"] .pub-card__link {
+    color: #c8d5db;
+    background: #202c32;
+    border-color: #344750;
+
+    &:hover,
+    &:focus {
+      color: #b9d9ea;
+      background: #26363e;
+      border-color: #557a95;
+    }
+  }
+
+  html[data-theme="dark"] .pub-card__tldr-toggle[aria-expanded="true"] {
+    color: #e5f0f5;
+    background: #36576a;
+    border-color: #557a95;
+  }
+
+  html[data-theme="dark"] .pub-card__tldr {
+    color: #bac8cf;
+    background: rgba(#7fa7bf, 0.08);
+    border-color: #557a95;
+  }
+
+  html[data-theme="dark"] .news-list strong,
+  html[data-theme="dark"] .award-list strong {
+    color: #dce5e9;
+  }
+
+  html[data-theme="dark"] p > code,
+  html[data-theme="dark"] a > code,
+  html[data-theme="dark"] li > code,
+  html[data-theme="dark"] figcaption > code,
+  html[data-theme="dark"] td > code,
+  html[data-theme="dark"] pre,
+  html[data-theme="dark"] .highlight {
+    color: #d7e1e6;
+    background: #182329;
+    border-color: #2b3a42;
+  }
+
+  html[data-theme="dark"] blockquote {
+    color: #a9b8c0;
+    border-color: #3a4c55;
+  }
+
+  html[data-theme="dark"] table,
+  html[data-theme="dark"] th,
+  html[data-theme="dark"] td {
+    border-color: #2b3a42;
+  }
+
+  html[data-theme="dark"] th {
+    color: #dce5e9;
+    background: #182329;
+  }
+
+  html[data-theme="dark"] .page__footer {
+    color: #9eafb8;
+    background: #141e23;
+    border-color: #2b3a42;
+
+    .fas,
+    .fab,
+    .far,
+    .fal {
+      color: #9eafb8;
+    }
+  }
+
+  @media (max-width: #{$large - 1px}) {
+    html[data-theme="dark"] .author__urls {
+      background: #172126;
+      border-color: #2b3a42;
+      box-shadow: 0 0.45rem 1.2rem rgba(#000, 0.24);
+
+      &::before {
+        border-color: #2b3a42 transparent;
+      }
+
+      &::after {
+        border-color: #172126 transparent;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle {
+    transition: none;
+  }
+}

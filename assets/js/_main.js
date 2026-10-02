@@ -45,8 +45,44 @@ $(document).ready(function(){
     $button.toggleClass("open");
   });
 
+  // Expand or collapse publication TL;DR summaries.
+  $(".pub-card__tldr-toggle").on("click", function() {
+    var $button = $(this);
+    var panel = document.getElementById($button.attr("aria-controls"));
+
+    if (!panel) {
+      return;
+    }
+
+    var $panel = $(panel);
+    var willExpand = $button.attr("aria-expanded") !== "true";
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    $panel.stop(true, true);
+    $button.attr("aria-expanded", willExpand ? "true" : "false");
+
+    if (willExpand) {
+      panel.hidden = false;
+
+      if (reduceMotion) {
+        $panel.show();
+      } else {
+        $panel.hide().slideDown(180);
+      }
+    } else if (reduceMotion) {
+      $panel.hide();
+      panel.hidden = true;
+    } else {
+      $panel.slideUp(160, function() {
+        panel.hidden = true;
+        $panel.removeAttr("style");
+      });
+    }
+  });
+
   // init smooth scroll
-  $("a").smoothScroll({offset: -20});
+  var mastheadOffset = -Math.ceil($(".masthead").outerHeight() || 0) - 12;
+  $("a").smoothScroll({offset: mastheadOffset});
 
   // add lightbox class to all image links
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");

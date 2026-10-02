@@ -1,0 +1,26 @@
+{% include base_path %}
+{% assign author = site.author %}
+
+<section id="about" class="home-profile" itemscope itemtype="https://schema.org/Person" aria-labelledby="home-profile-name">
+  <div class="home-profile__avatar">
+    <img src="{{ author.avatar | prepend: '/images/' | prepend: base_path }}" alt="{{ author.name }}" width="320" height="320" decoding="async" itemprop="image">
+  </div>
+
+  <div class="home-profile__content">
+    <h1 id="home-profile-name" class="home-profile__name" itemprop="name">{{ author.name }}</h1>
+    <p class="home-profile__role"><a href="https://www.cs.cityu.edu.hk/">Department of Computer Science</a><span class="home-profile__role-separator" aria-hidden="true"> · </span><a href="https://www.cityu.edu.hk/" itemprop="affiliation">City University of Hong Kong</a></p>
+
+    <div class="home-profile__intro">
+      <p>I am a <span itemprop="jobTitle">Ph.D. candidate</span> co-advised by <a href="https://www.cs.cityu.edu.hk/~dapengwu/">Prof. Dapeng Wu</a> and <a href="https://sites.google.com/site/junhuihoushomepage/biography">Prof. Junhui Hou</a>. Previously, I received my master’s degree from <a href="https://ev.buaa.edu.cn/">Beihang University</a> and my bachelor’s degree from <a href="https://en.nwpu.edu.cn/">Northwestern Polytechnical University</a>.</p>
+      <p>My research focuses on geometry-aware generative models for articulated 3D/4D objects, particularly in motion generation, reconstruction, and character animation.</p>
+    </div>
+
+    <nav class="home-profile__links" aria-label="Profile links">
+      {% if author.email %}<a href="mailto:{{ author.email }}" itemprop="email"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>{% endif %}
+      {% if author.googlescholar %}<a href="{{ author.googlescholar }}" title="Google Scholar" itemprop="sameAs"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Scholar</a>{% endif %}
+      {% if author.github %}<a href="https://github.com/{{ author.github }}" itemprop="sameAs"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>{% endif %}
+      {% if author.linkedin %}<a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>{% endif %}
+      {% if author.orcid %}<a href="{{ author.orcid }}" itemprop="sameAs"><i class="ai ai-orcid-square ai-fw" aria-hidden="true"></i> ORCID</a>{% endif %}
+    </nav>
+  </div>
+</section>

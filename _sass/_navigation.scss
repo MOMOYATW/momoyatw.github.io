@@ -174,8 +174,10 @@
 
 .greedy-nav {
   position: relative;
+  display: flex;
+  align-items: center;
   min-width: 250px;
-  background: $background-color;
+  background: transparent;
 
   a {
     display: block;
@@ -193,13 +195,23 @@
     display: inline-flex;
     align-items: center;
     gap: 0.55rem;
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .masthead__brand-mark {
-    width: 26px;
-    height: 26px;
-    flex: 0 0 26px;
-    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    border-radius: 6px;
+  }
+
+  .masthead__brand-name {
+    font-family: $display-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    line-height: 1;
   }
 
   button {
@@ -232,18 +244,11 @@
 
   .visible-links {
     display: table;
+    margin-left: auto;
 
     li {
       display: table-cell;
       vertical-align: middle;
-
-      &:first-child {
-        font-weight: bold;
-
-        a {
-          margin-left: 0;
-        }
-      }
 
       &:last-child {
         a {
@@ -276,6 +281,10 @@
                 transform: scaleX(1); /* reveal*/
       }
     }
+  }
+
+  > button:not(.hidden) + .visible-links {
+    margin-right: 4.1rem;
   }
 
   .hidden-links {

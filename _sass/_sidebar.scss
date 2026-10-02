@@ -15,6 +15,7 @@
 
   @include breakpoint($large) {
     @include span(2 of 12);
+    top: 5.5rem;
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -87,6 +88,9 @@
     border-radius: 50%;
 
     @include breakpoint($large) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       padding: 5px;
       border: 1px solid mix(#fff, $primary-color, 72%);
     }
@@ -105,6 +109,7 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
   }
 }
 
@@ -182,11 +187,14 @@
   @include breakpoint($large) {
     display: block;
     position: relative;
-    margin: 0;
+    width: max-content;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 0;
     border: 0;
     background: transparent;
     box-shadow: none;
+    text-align: left;
   }
 
   &:before {

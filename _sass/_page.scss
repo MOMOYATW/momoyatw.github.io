@@ -54,6 +54,10 @@
     padding-bottom: 0.5em;
     color: mix(#000, $primary-color, 30%);
     border-bottom: 1px solid $border-color;
+
+    &[id] {
+      scroll-margin-top: 5.5rem;
+    }
   }
 
   p, li, dl {

@@ -12,10 +12,86 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function () {
+    var root = document.documentElement;
+    var storageKey = 'ye-tao-theme';
+    var colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+    root.className = root.className.replace(/\bno-js\b/g, '') + ' js ';
+
+    function storedTheme() {
+      try {
+        var theme = window.localStorage.getItem(storageKey);
+        return theme === 'dark' || theme === 'light' ? theme : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function systemTheme() {
+      return colorScheme.matches ? 'dark' : 'light';
+    }
+
+    function updateControls(theme) {
+      var button = document.querySelector('.theme-toggle');
+      var isDark = theme === 'dark';
+      var label = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+      var themeColor = document.querySelector('meta[name="theme-color"]');
+
+      if (button) {
+        button.setAttribute('aria-label', label);
+        button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+        button.setAttribute('title', label);
+      }
+
+      if (themeColor) {
+        themeColor.setAttribute('content', isDark ? '#11191d' : '#557a95');
+      }
+    }
+
+    function applyTheme(theme, persist) {
+      root.setAttribute('data-theme', theme);
+      updateControls(theme);
+
+      if (persist) {
+        try {
+          window.localStorage.setItem(storageKey, theme);
+        } catch (error) {
+          // The selected theme still applies for the current page view.
+        }
+      }
+    }
+
+    applyTheme(storedTheme() || systemTheme(), false);
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var button = document.querySelector('.theme-toggle');
+
+      updateControls(root.getAttribute('data-theme'));
+
+      if (button) {
+        button.addEventListener('click', function () {
+          var nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme, true);
+        });
+      }
+    });
+
+    function followSystemTheme(event) {
+      if (!storedTheme()) {
+        applyTheme(event.matches ? 'dark' : 'light', false);
+      }
+    }
+
+    if (colorScheme.addEventListener) {
+      colorScheme.addEventListener('change', followSystemTheme);
+    } else if (colorScheme.addListener) {
+      colorScheme.addListener(followSystemTheme);
+    }
+  }());
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css?v={{ site.github.build_revision | default: site.time | date: '%s' }}">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css?v={{ site.github.build_revision | default: site.time | date: '%s' }}-home5">
 
 <meta http-equiv="cleartype" content="on">

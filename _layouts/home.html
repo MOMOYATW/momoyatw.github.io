@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<main id="main" class="home-main" role="main">
+  <article class="home-page" itemscope itemtype="https://schema.org/WebPage">
+    {% if page.title %}<meta itemprop="name" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+
+    {% include home-profile.html %}
+
+    <section class="page__content" itemprop="mainContentOfPage">
+      {{ content }}
+    </section>
+  </article>
+</main>

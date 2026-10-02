@@ -2,10 +2,11 @@
   authors: "**Ye Tao**, Yuxin Yao, Kendong Liu, Dapeng Wu, Junhui Hou"
   venue: "European Conference on Computer Vision (ECCV)"
   year: 2026
-  teaser: publications/skelmo-poster-wide.jpg
-  video: publications/skelmo-teaser-wide.mp4
-  image_width: 1440
-  image_height: 428
+  teaser: publications/skelmo-poster-16x9.jpg
+  video: publications/skelmo-teaser-16x9.mp4
+  image_width: 960
+  image_height: 540
+  tldr: "Generates structurally valid skeletal animations for arbitrary rigged shapes from a driving video, even across very different skeletons and morphologies."
   links:
     - label: Project
       url: https://research.davytao.me/skelmo
@@ -24,6 +25,7 @@
   teaser: publications/gsv3d-720.jpg
   image_width: 720
   image_height: 433
+  tldr: "Turns a single image into a geometrically consistent 3D object by distilling Stable Video Diffusion into an explicit Gaussian Splatting representation."
   links:
     - label: Paper
       url: https://openaccess.thecvf.com/content/ICCV2025/html/Tao_GSV3D_Gaussian_Splatting-based_Geometric_Distillation_with_Stable_Video_Diffusion_for_ICCV_2025_paper.html
@@ -39,6 +41,7 @@
   teaser: publications/motionawarenerf-720.jpg
   image_width: 720
   image_height: 551
+  tldr: "Reconstructs the continuous appearance, geometry, and motion attributes of articulated objects from unordered, discontinuous images using an implicit motion-state space."
   links:
     - label: Paper
       url: https://doi.org/10.1109/TVCG.2024.3400830
