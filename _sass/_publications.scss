@@ -144,6 +144,37 @@
 }
 
 .page__content {
+  .news-list {
+    margin: 0 0 1.5em;
+    padding: 0;
+    list-style: none;
+  }
+
+  .news-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+    margin-bottom: 0.55em;
+    line-height: 1.5;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .news-list time {
+    flex: 0 0 5.2em;
+    color: $primary-color;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .news-list span {
+    min-width: 0;
+  }
+
   .research-tags {
     display: flex;
     flex-wrap: wrap;

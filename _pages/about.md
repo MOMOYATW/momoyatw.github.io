@@ -12,7 +12,7 @@ redirect_from:
 
 ## About
 
-I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-advised by [Prof. Dapeng Wu](https://www.cs.cityu.edu.hk/~dapengwu/) and [Prof. Junhui Hou](https://sites.google.com/site/junhuihoushomepage/biography). My research lies at the intersection of computer vision, computer graphics, and generative models, with a particular focus on 3D/4D content generation, articulated motion generation, and character animation.
+I develop geometry-aware generative models for articulated 3D/4D objects, with a focus on motion generation, reconstruction, and character animation. I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-advised by [Prof. Dapeng Wu](https://www.cs.cityu.edu.hk/~dapengwu/) and [Prof. Junhui Hou](https://sites.google.com/site/junhuihoushomepage/biography).
 
 <div class="research-tags" aria-label="Research keywords">
   <span>3D/4D Generation</span>
@@ -21,16 +21,28 @@ I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-a
   <span>Geometry-aware Vision</span>
 </div>
 
-## 🔥 News {#news}
-- [2026.07] 🎉 I passed my Ph.D. qualifying examination and advanced to Ph.D. candidacy!
-- [2026.06] 🎉 Our paper "**SkelMo: Universal Skeletal Motion Generation for 3D Rigged Shapes**" has been accepted to **ECCV 2026**!
-- [2025.06] 🎉 Our paper "**GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation**" has been accepted to **ICCV 2025**!
+## News {#news}
 
-## 📖 Selected Publications {#publications}
+<ul class="news-list">
+  <li>
+    <time datetime="2026-07">Jul 2026</time>
+    <span>Passed my Ph.D. qualifying examination and advanced to candidacy.</span>
+  </li>
+  <li>
+    <time datetime="2026-06">Jun 2026</time>
+    <span><a href="https://research.davytao.me/skelmo"><strong>SkelMo</strong></a> was accepted to <strong>ECCV 2026</strong>.</span>
+  </li>
+  <li>
+    <time datetime="2025-06">Jun 2025</time>
+    <span><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Tao_GSV3D_Gaussian_Splatting-based_Geometric_Distillation_with_Stable_Video_Diffusion_for_ICCV_2025_paper.html"><strong>GSV3D</strong></a> was accepted to <strong>ICCV 2025</strong>.</span>
+  </li>
+</ul>
+
+## Selected Publications {#publications}
 
 {% include publications.html %}
 
-## 🎓 Education {#education}
+## Education {#education}
 
 <ul class="education-list">
   <li class="education-item">
@@ -62,7 +74,7 @@ I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-a
   </li>
 </ul>
 
-## 🏆 Honors & Awards {#honors}
+## Honors & Awards {#honors}
 - **2026**, Outstanding Academic Performance Award, City University of Hong Kong
 - **2023 – 2024**, Second-Class Academic Scholarship, School of Computer Science and Engineering, Beihang University
 - **2019 – 2022**, Outstanding Student Scholarship, School of Computer Science, Northwestern Polytechnical University

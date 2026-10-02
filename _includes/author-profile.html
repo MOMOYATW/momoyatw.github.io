@@ -19,6 +19,18 @@
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
+  <nav class="author__quick-links" aria-label="Profile links">
+    {% if author.email %}
+      <a href="mailto:{{ author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+    {% endif %}
+    {% if author.googlescholar %}
+      <a href="{{ author.googlescholar }}"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Scholar</a>
+    {% endif %}
+    {% if author.github %}
+      <a href="https://github.com/{{ author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+    {% endif %}
+  </nav>
+
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse" type="button" aria-expanded="false" aria-controls="author-links">Links</button>
     <ul id="author-links" class="author__urls social-icons">

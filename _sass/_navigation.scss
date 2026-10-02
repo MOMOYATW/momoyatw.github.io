@@ -191,14 +191,30 @@
 
   button {
     position: absolute;
+    width: 44px;
     height: 100%;
     right: 0;
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: $primary-color;
-    color: #fff;
+    background-color: transparent;
+    color: $masthead-link-color;
     cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $lighter-gray;
+    }
+
+    .navicon,
+    .navicon:before,
+    .navicon:after {
+      background: $masthead-link-color;
+    }
+
+    &.close .navicon {
+      background: transparent;
+    }
   }
 
   .visible-links {
