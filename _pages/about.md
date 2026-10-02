@@ -57,8 +57,8 @@ My research focuses on geometry-aware generative models for articulated 3D/4D ob
   <li class="education-item">
     <div class="education-item__inner">
       <div class="education-item__content">
-        <div><strong><a href="https://buaa.edu.cn/">Beihang University (BUAA)</a></strong>, Beijing, China</div>
-        <div>M.E. in Computer Technology, <a href="https://scse.buaa.edu.cn/">School of Computer Science and Engineering</a></div>
+        <div><strong><a href="https://ev.buaa.edu.cn/">Beihang University (BUAA)</a></strong>, Beijing, China</div>
+        <div>M.E. in Computer Technology, <a href="https://scse.buaa.edu.cn/English/Home.htm">School of Computer Science and Engineering</a></div>
       </div>
       <div class="education-item__date"><em>2022 – 2025</em></div>
     </div>
@@ -66,7 +66,7 @@ My research focuses on geometry-aware generative models for articulated 3D/4D ob
   <li class="education-item">
     <div class="education-item__inner">
       <div class="education-item__content">
-        <div><strong><a href="https://www.nwpu.edu.cn/">Northwestern Polytechnical University (NWPU)</a></strong>, Xi'an, China</div>
+        <div><strong><a href="https://en.nwpu.edu.cn/">Northwestern Polytechnical University (NWPU)</a></strong>, Xi'an, China</div>
         <div>B.E. in Computer Science, <a href="https://jsj.nwpu.edu.cn/">School of Computer Science</a></div>
       </div>
       <div class="education-item__date"><em>2018 – 2022</em></div>
