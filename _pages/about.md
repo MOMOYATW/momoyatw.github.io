@@ -21,16 +21,16 @@ I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-a
   <span>Geometry-aware Vision</span>
 </div>
 
-## 🔥 News
+## 🔥 News {#news}
 - [2026.07] 🎉 I passed my Ph.D. qualifying examination and advanced to Ph.D. candidacy!
 - [2026.06] 🎉 Our paper "**SkelMo: Universal Skeletal Motion Generation for 3D Rigged Shapes**" has been accepted to **ECCV 2026**!
 - [2025.06] 🎉 Our paper "**GSV3D: Gaussian Splatting-based Geometric Distillation with Stable Video Diffusion for Single-Image 3D Object Generation**" has been accepted to **ICCV 2025**!
 
-## 📖 Selected Publications
+## 📖 Selected Publications {#publications}
 
 {% include publications.html %}
 
-## 🎓 Education
+## 🎓 Education {#education}
 
 <ul class="education-list">
   <li class="education-item">
@@ -46,7 +46,7 @@ I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-a
     <div class="education-item__inner">
       <div class="education-item__content">
         <div><strong><a href="https://buaa.edu.cn/">Beihang University (BUAA)</a></strong>, Beijing, China</div>
-        <div>M.E. in Computer Technology, <a href="http://scse.buaa.edu.cn/">School of Computer Science and Engineering</a></div>
+        <div>M.E. in Computer Technology, <a href="https://scse.buaa.edu.cn/">School of Computer Science and Engineering</a></div>
       </div>
       <div class="education-item__date"><em>2022 – 2025</em></div>
     </div>
@@ -62,7 +62,7 @@ I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-a
   </li>
 </ul>
 
-## 🏆 Honors & Awards
+## 🏆 Honors & Awards {#honors}
 - **2026**, Outstanding Academic Performance Award, City University of Hong Kong
 - **2023 – 2024**, Second-Class Academic Scholarship, School of Computer Science and Engineering, Beihang University
 - **2019 – 2022**, Outstanding Student Scholarship, School of Computer Science, Northwestern Polytechnical University
