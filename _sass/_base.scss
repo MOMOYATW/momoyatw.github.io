@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+  margin-bottom: 0 !important; // override legacy sticky-footer JS cached by browsers
   padding: 0;
   min-height: 100vh;
   display: flex;
