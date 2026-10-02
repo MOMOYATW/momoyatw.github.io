@@ -12,7 +12,7 @@ redirect_from:
 
 ## About
 
-I develop geometry-aware generative models for articulated 3D/4D objects, with a focus on motion generation, reconstruction, and character animation. I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-advised by [Prof. Dapeng Wu](https://www.cs.cityu.edu.hk/~dapengwu/) and [Prof. Junhui Hou](https://sites.google.com/site/junhuihoushomepage/biography).
+My research focuses on geometry-aware generative models for articulated 3D/4D objects, particularly in motion generation, reconstruction, and character animation. I am a Ph.D. candidate in Computer Science at City University of Hong Kong, co-advised by [Prof. Dapeng Wu](https://www.cs.cityu.edu.hk/~dapengwu/) and [Prof. Junhui Hou](https://sites.google.com/site/junhuihoushomepage/biography).
 
 <div class="research-tags" aria-label="Research keywords">
   <span>3D/4D Generation</span>
@@ -26,15 +26,15 @@ I develop geometry-aware generative models for articulated 3D/4D objects, with a
 <ul class="news-list">
   <li>
     <time datetime="2026-07">Jul 2026</time>
-    <span>Passed my Ph.D. qualifying examination and advanced to candidacy.</span>
+    <span>🎓 Passed my Ph.D. qualifying examination and advanced to candidacy.</span>
   </li>
   <li>
     <time datetime="2026-06">Jun 2026</time>
-    <span><a href="https://research.davytao.me/skelmo"><strong>SkelMo</strong></a> was accepted to <strong>ECCV 2026</strong>.</span>
+    <span>🎉 <a href="https://research.davytao.me/skelmo"><strong>SkelMo</strong></a> was accepted to <strong>ECCV 2026</strong>.</span>
   </li>
   <li>
     <time datetime="2025-06">Jun 2025</time>
-    <span><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Tao_GSV3D_Gaussian_Splatting-based_Geometric_Distillation_with_Stable_Video_Diffusion_for_ICCV_2025_paper.html"><strong>GSV3D</strong></a> was accepted to <strong>ICCV 2025</strong>.</span>
+    <span>🎉 <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Tao_GSV3D_Gaussian_Splatting-based_Geometric_Distillation_with_Stable_Video_Diffusion_for_ICCV_2025_paper.html"><strong>GSV3D</strong></a> was accepted to <strong>ICCV 2025</strong>.</span>
   </li>
 </ul>
 
