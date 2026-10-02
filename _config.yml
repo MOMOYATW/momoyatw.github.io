@@ -10,7 +10,7 @@ locale: "en-US"
 title: "Ye Tao"
 title_separator: "-"
 name: &name "Ye Tao"
-description: &description "Personal homepage of Ye Tao, a Ph.D. candidate at City University of Hong Kong working on 3D/4D generation, articulated motion, and character animation."
+description: &description "Ye Tao is a Ph.D. candidate at City University of Hong Kong researching geometry-aware 3D/4D generation, articulated motion, and character animation."
 url: https://davytao.me # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "momoyatw/momoyatw.github.io"
@@ -63,12 +63,28 @@ facebook:
   app_id:
   publisher:
 og_image: "avatar-2025.jpg" # Open Graph/Twitter default site image
+og_image_alt: "Portrait of Ye Tao"
+og_image_width: 1288
+og_image_height: 1288
 twitter_card: "summary"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type: Person
   name: "Ye Tao"
+  job_title: "Ph.D. Candidate"
+  affiliation:
+    name: "City University of Hong Kong"
+    url: "https://www.cityu.edu.hk/"
+  alumni_of:
+    - name: "Beihang University"
+      url: "https://ev.buaa.edu.cn/"
+    - name: "Northwestern Polytechnical University"
+      url: "https://en.nwpu.edu.cn/"
+  knows_about:
+    - "Geometry-aware 3D/4D generation"
+    - "Articulated motion"
+    - "Character animation"
   links:
     - "https://scholar.google.com/citations?user=NfCKsjsAAAAJ&hl=en"
     - "https://github.com/momoyatw"

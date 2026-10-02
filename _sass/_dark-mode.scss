@@ -6,6 +6,46 @@
   color-scheme: light;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  :where(
+    h1, h2, h3, h4, h5, h6,
+    p, li, time, small, strong, em, blockquote, th, td,
+    .home-profile__name,
+    .home-profile__role,
+    .author__bio,
+    .author__urls,
+    .page__meta,
+    .pub-card__authors,
+    .pub-card__venue,
+    .pub-card__tldr,
+    .award-list__date,
+    .page__footer
+  ) {
+    transition: color 0.18s ease;
+  }
+
+  body,
+  .masthead,
+  .greedy-nav .hidden-links,
+  .greedy-nav .hidden-links li,
+  .author__urls,
+  .author__avatar img,
+  .author__quick-links a,
+  .home-profile,
+  .home-profile__avatar img,
+  .pub-card,
+  .pub-card__teaser,
+  .pub-card__teaser img,
+  .pub-card__teaser video,
+  .pub-card__link,
+  .pub-card__tldr,
+  .page__footer {
+    transition-property: color, background-color, border-color, box-shadow, filter;
+    transition-duration: 0.18s;
+    transition-timing-function: ease;
+  }
+}
+
 @media screen {
   html[data-theme="dark"] {
     color-scheme: dark;
@@ -329,6 +369,11 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  a,
+  button,
+  input,
+  input[type="submit"],
+  .btn,
   .theme-toggle {
     transition: none;
   }

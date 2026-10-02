@@ -38,6 +38,9 @@
     {% assign seo_image_url = seo_image | prepend: "/images/" | prepend: seo_url %}
   {% endif %}
 {% endif %}
+{% assign seo_image_alt = page.og_image_alt | default: site.og_image_alt | default: page.title | default: site.title %}
+{% assign seo_image_width = page.og_image_width | default: site.og_image_width %}
+{% assign seo_image_height = page.og_image_height | default: site.og_image_height %}
 
 {% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
 {% if seo_author %}
@@ -53,7 +56,7 @@
   {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
 {% endif %}
 
-<meta property="og:locale" content="{{ site.locale | default: "en" }}">
+<meta property="og:locale" content="{{ site.locale | default: "en" | replace: "-", "_" }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
@@ -69,6 +72,9 @@
 
 {% if seo_image_url %}
   <meta property="og:image" content="{{ seo_image_url }}">
+  {% if seo_image_alt %}<meta property="og:image:alt" content="{{ seo_image_alt | escape_once }}">{% endif %}
+  {% if seo_image_width %}<meta property="og:image:width" content="{{ seo_image_width }}">{% endif %}
+  {% if seo_image_height %}<meta property="og:image:height" content="{{ seo_image_height }}">{% endif %}
 {% endif %}
 
 <meta name="twitter:card" content="{{ page.twitter_card | default: site.twitter_card | default: 'summary' }}">
@@ -76,6 +82,7 @@
 {% if seo_description %}<meta name="twitter:description" content="{{ seo_description }}">{% endif %}
 {% if canonical_url %}<meta name="twitter:url" content="{{ canonical_url }}">{% endif %}
 {% if seo_image_url %}<meta name="twitter:image" content="{{ seo_image_url }}">{% endif %}
+{% if seo_image_url and seo_image_alt %}<meta name="twitter:image:alt" content="{{ seo_image_alt | escape_once }}">{% endif %}
 
 {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
@@ -110,10 +117,40 @@
     {
       "@context" : "https://schema.org",
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
+      "@id" : {{ seo_url | append: "/#person" | jsonify }},
       "name" : "{{ site.social.name | default: site.name }}",
       "url" : {{ seo_url | jsonify }},
       "image" : {{ seo_image_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
+      "sameAs" : {{ site.social.links | jsonify }}{% if site.social.job_title %},
+      "jobTitle" : {{ site.social.job_title | jsonify }}{% endif %}{% if site.social.affiliation %},
+      "affiliation" : {
+        "@type" : "CollegeOrUniversity",
+        "name" : {{ site.social.affiliation.name | jsonify }},
+        "url" : {{ site.social.affiliation.url | jsonify }}
+      }{% endif %}{% if site.social.alumni_of %},
+      "alumniOf" : [
+        {% for organization in site.social.alumni_of %}{
+          "@type" : "CollegeOrUniversity",
+          "name" : {{ organization.name | jsonify }},
+          "url" : {{ organization.url | jsonify }}
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+      ]{% endif %}{% if site.social.knows_about %},
+      "knowsAbout" : {{ site.social.knows_about | jsonify }}{% endif %}
+    }
+  </script>
+{% endif %}
+
+{% if page.url == "/" %}
+  <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "@id" : {{ seo_url | append: "/#website" | jsonify }},
+      "name" : {{ site.title | jsonify }},
+      "url" : {{ seo_url | append: "/" | jsonify }}{% if site.social and site.social.links %},
+      "author" : {
+        "@id" : {{ seo_url | append: "/#person" | jsonify }}
+      }{% endif %}
     }
   </script>
 {% endif %}

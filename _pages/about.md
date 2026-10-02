@@ -1,9 +1,9 @@
 ---
 permalink: /
 layout: home
-title: "Ye Tao — Homepage"
-description: "Personal homepage of Ye Tao, a Ph.D. candidate at City University of Hong Kong working on 3D/4D generation, articulated motion, and character animation."
-excerpt: "Personal homepage of Ye Tao"
+title: 'Ye Tao \| CityUHK CS Ph.D. Candidate'
+description: "Ye Tao is a Ph.D. candidate at City University of Hong Kong researching geometry-aware 3D/4D generation, articulated motion, and character animation."
+excerpt: "Ye Tao, a CS Ph.D. candidate at City University of Hong Kong"
 hide_title: true
 author_profile: false
 redirect_from: 
