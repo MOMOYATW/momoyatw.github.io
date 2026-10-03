@@ -18,6 +18,7 @@
     .pub-card__authors,
     .pub-card__venue,
     .pub-card__tldr,
+    .news-list__emoji,
     .award-list__date,
     .page__footer
   ) {
@@ -33,6 +34,7 @@
   .author__quick-links a,
   .home-profile,
   .home-profile__avatar img,
+  .news-list__emoji,
   .pub-card,
   .pub-card__teaser,
   .pub-card__teaser img,
@@ -43,6 +45,11 @@
     transition-property: color, background-color, border-color, box-shadow, filter;
     transition-duration: 0.18s;
     transition-timing-function: ease;
+  }
+
+  .pub-card__teaser {
+    transition-property: color, background-color, border-color, box-shadow, filter, transform;
+    transition-duration: 0.2s;
   }
 }
 
@@ -184,11 +191,13 @@
   }
 
   html[data-theme="dark"] .theme-toggle__icon--moon {
-    display: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(28deg) scale(0.78);
   }
 
   html[data-theme="dark"] .theme-toggle__icon--sun {
-    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
   }
 
   html[data-theme="dark"] .author__avatar img {
@@ -264,11 +273,16 @@
   html[data-theme="dark"] .pub-card {
     background: #172126;
     border-color: #2b3a42;
-    box-shadow: 0 0.35rem 1.15rem rgba(#000, 0.12);
+    box-shadow:
+      0 0.3rem 1rem rgba(#000, 0.16),
+      inset 0 1px 0 rgba(#fff, 0.018);
 
     &:hover {
-      border-color: #3c5360;
-      box-shadow: 0 0.4rem 1.25rem rgba(#000, 0.22);
+      border-color: #405965;
+      box-shadow:
+        0 0.55rem 1.5rem rgba(#000, 0.3),
+        0 0 0 1px rgba(#7fa7bf, 0.06),
+        inset 0 1px 0 rgba(#fff, 0.025);
     }
   }
 
@@ -290,6 +304,14 @@
   html[data-theme="dark"] .pub-card__teaser img,
   html[data-theme="dark"] .pub-card__teaser video {
     filter: brightness(0.85);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    html[data-theme="dark"] .pub-card__teaser:hover {
+      box-shadow:
+        0 0.45rem 1.1rem rgba(#000, 0.34),
+        0 0 0 1px rgba(#7fa7bf, 0.14);
+    }
   }
 
   html[data-theme="dark"] .pub-card__link {
@@ -320,6 +342,11 @@
   html[data-theme="dark"] .news-list strong,
   html[data-theme="dark"] .award-list strong {
     color: #dce5e9;
+  }
+
+  html[data-theme="dark"] .news-list__emoji {
+    filter: drop-shadow(0 0 1px rgba(#eef7fb, 0.82))
+            drop-shadow(0 0 4px rgba(#7fa7bf, 0.38));
   }
 
   html[data-theme="dark"] p > code,
@@ -386,7 +413,8 @@
   input,
   input[type="submit"],
   .btn,
-  .theme-toggle {
+  .theme-toggle,
+  .theme-toggle__icon {
     transition: none;
   }
 }

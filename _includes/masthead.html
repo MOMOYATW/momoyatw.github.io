@@ -1,10 +1,15 @@
 {% include base_path %}
+{% if page.url == '/' %}
+  {% assign brand_url = '#about' %}
+{% else %}
+  {% assign brand_url = base_path | append: '/#about' %}
+{% endif %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="masthead__brand" href="{{ base_path }}/" aria-label="Ye Tao — Home">
+        <a class="masthead__brand" href="{{ brand_url }}" aria-label="Ye Tao — About">
           <img class="masthead__brand-mark" src="{{ base_path }}/images/yt-monogram.svg?v=yblue20261002" alt="" width="32" height="32">
           <span class="masthead__brand-name">YE TAO</span>
         </a>

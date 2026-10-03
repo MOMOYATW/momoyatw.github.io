@@ -86,6 +86,9 @@
 }
 
 .theme-toggle__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 1.05rem;
   height: 1.05rem;
   fill: none;
@@ -93,10 +96,19 @@
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+  transform-origin: center;
+  transition: opacity 0.15s ease, transform 0.18s ease;
+  will-change: opacity, transform;
+}
+
+.theme-toggle__icon--moon {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
 }
 
 .theme-toggle__icon--sun {
-  display: none;
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(-28deg) scale(0.78);
 }
 
 @media (max-width: 767px) {

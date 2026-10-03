@@ -43,6 +43,7 @@
   overflow: hidden;
   border-radius: $border-radius;
   background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   @include breakpoint($medium) {
     position: relative;
@@ -74,12 +75,13 @@
     object-fit: contain;
     object-position: center;
     background: #fff;
-    transition: opacity 0.25s ease;
   }
+}
 
-  &:hover img,
-  &:hover video {
-    opacity: 0.92;
+@media (hover: hover) and (pointer: fine) {
+  .pub-card__teaser:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba($primary-color, 0.16);
   }
 }
 
@@ -88,6 +90,14 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .pub-card__teaser {
+    transition: box-shadow 0.2s ease;
+  }
+
+  .pub-card__teaser:hover {
+    transform: none;
+  }
+
   .pub-card__video {
     display: none;
   }
@@ -119,7 +129,7 @@
 
   strong {
     color: $text-color;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
@@ -188,6 +198,7 @@
 }
 
 .pub-card__tldr {
+  overflow: hidden;
   margin-top: 0.65rem;
   padding: 0.58rem 0.72rem;
   color: mix($text-color, $gray, 78%);
@@ -235,6 +246,16 @@
 
   .news-list span {
     min-width: 0;
+  }
+
+  .news-list__emoji {
+    display: inline-block;
+    width: 1.15em;
+    margin-right: 0.24em;
+    font-size: 1em;
+    line-height: 1;
+    text-align: center;
+    vertical-align: -0.12em;
   }
 
   .news-venue {

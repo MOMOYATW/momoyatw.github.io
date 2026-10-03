@@ -16,19 +16,19 @@ redirect_from:
 <ul class="news-list">
   <li>
     <time datetime="2026-09">Sep 2026</time>
-    <span>🏆 Received the Outstanding Academic Performance Award from City University of Hong Kong.</span>
+    <span><span class="news-list__emoji" aria-hidden="true">🏆</span>Received the Outstanding Academic Performance Award from City University of Hong Kong.</span>
   </li>
   <li>
     <time datetime="2026-07">Jul 2026</time>
-    <span>🎓 Passed my Ph.D. qualifying examination and advanced to candidacy.</span>
+    <span><span class="news-list__emoji" aria-hidden="true">🎓</span>Passed my Ph.D. qualifying examination and advanced to candidacy.</span>
   </li>
   <li>
     <time datetime="2026-06">Jun 2026</time>
-    <span>🎉 <a href="https://research.davytao.me/skelmo">SkelMo</a> was accepted to <strong class="news-venue">ECCV 2026</strong>.</span>
+    <span><span class="news-list__emoji" aria-hidden="true">🎉</span><a href="https://research.davytao.me/skelmo">SkelMo</a> was accepted to <strong class="news-venue">ECCV 2026</strong>.</span>
   </li>
   <li>
     <time datetime="2025-06">Jun 2025</time>
-    <span>🎉 <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Tao_GSV3D_Gaussian_Splatting-based_Geometric_Distillation_with_Stable_Video_Diffusion_for_ICCV_2025_paper.html">GSV3D</a> was accepted to <strong class="news-venue">ICCV 2025</strong>.</span>
+    <span><span class="news-list__emoji" aria-hidden="true">🎉</span><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Tao_GSV3D_Gaussian_Splatting-based_Geometric_Distillation_with_Stable_Video_Diffusion_for_ICCV_2025_paper.html">GSV3D</a> was accepted to <strong class="news-venue">ICCV 2025</strong>.</span>
   </li>
 </ul>
 

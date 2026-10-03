@@ -12,26 +12,123 @@
     var visibleLinks = nav.querySelector(".visible-links");
     var hiddenLinks = nav.querySelector(".hidden-links");
     var brand = nav.querySelector(".masthead__brand");
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var menuAnimation;
+    var menuAnimationSequence = 0;
     var resizeFrame;
 
     if (!button || !visibleLinks || !hiddenLinks || !brand) {
       return;
     }
 
-    function closeMenu() {
-      hiddenLinks.classList.add("hidden");
-      button.classList.remove("close");
-      button.setAttribute("aria-expanded", "false");
+    function setMenuState(open) {
+      button.classList.toggle("close", open);
+      button.setAttribute("aria-expanded", open ? "true" : "false");
+      button.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+    }
+
+    function stopMenuAnimation() {
+      if (menuAnimation) {
+        menuAnimation.cancel();
+        menuAnimation = null;
+      }
+    }
+
+    function openMenu(animate) {
+      var wasHidden = hiddenLinks.classList.contains("hidden");
+      var startFrame;
+      var sequence = ++menuAnimationSequence;
+
+      if (wasHidden) {
+        hiddenLinks.classList.remove("hidden");
+        startFrame = {
+          opacity: 0,
+          transform: "translateY(-6px) scale(0.985)"
+        };
+      } else {
+        var currentStyle = window.getComputedStyle(hiddenLinks);
+        startFrame = {
+          opacity: currentStyle.opacity,
+          transform: currentStyle.transform === "none" ? "translateY(0) scale(1)" : currentStyle.transform
+        };
+      }
+
+      stopMenuAnimation();
+      setMenuState(true);
+
+      if (animate === false || reduceMotion.matches || !hiddenLinks.animate) {
+        return;
+      }
+
+      menuAnimation = hiddenLinks.animate(
+        [
+          startFrame,
+          { opacity: 1, transform: "translateY(0) scale(1)" }
+        ],
+        {
+          duration: 170,
+          easing: "cubic-bezier(0.2, 0.8, 0.2, 1)"
+        }
+      );
+
+      menuAnimation.addEventListener("finish", function () {
+        if (sequence === menuAnimationSequence) {
+          menuAnimation = null;
+        }
+      }, { once: true });
+    }
+
+    function closeMenu(animate) {
+      var isHidden = hiddenLinks.classList.contains("hidden");
+      var sequence = ++menuAnimationSequence;
+
+      setMenuState(false);
+
+      if (isHidden) {
+        stopMenuAnimation();
+        return;
+      }
+
+      if (animate === false || reduceMotion.matches || !hiddenLinks.animate) {
+        stopMenuAnimation();
+        hiddenLinks.classList.add("hidden");
+        return;
+      }
+
+      var currentStyle = window.getComputedStyle(hiddenLinks);
+      var startFrame = {
+        opacity: currentStyle.opacity,
+        transform: currentStyle.transform === "none" ? "translateY(0) scale(1)" : currentStyle.transform
+      };
+
+      stopMenuAnimation();
+      menuAnimation = hiddenLinks.animate(
+        [
+          startFrame,
+          { opacity: 0, transform: "translateY(-4px) scale(0.99)" }
+        ],
+        {
+          duration: 135,
+          easing: "cubic-bezier(0.4, 0, 1, 1)"
+        }
+      );
+
+      menuAnimation.addEventListener("finish", function () {
+        if (sequence === menuAnimationSequence) {
+          hiddenLinks.classList.add("hidden");
+          menuAnimation = null;
+        }
+      }, { once: true });
     }
 
     function updateNavigation() {
-      var menuWasOpen = !hiddenLinks.classList.contains("hidden");
+      var menuWasOpen = button.getAttribute("aria-expanded") === "true";
 
       while (hiddenLinks.firstElementChild) {
         visibleLinks.appendChild(hiddenLinks.firstElementChild);
       }
 
-      closeMenu();
+      closeMenu(false);
 
       var compact = window.matchMedia("(max-width: 767px)").matches;
       var availableWidth = nav.clientWidth - brand.getBoundingClientRect().width;
@@ -52,34 +149,35 @@
       button.classList.toggle("hidden", hiddenCount === 0);
 
       if (hiddenCount > 0 && menuWasOpen) {
-        hiddenLinks.classList.remove("hidden");
-        button.classList.add("close");
-        button.setAttribute("aria-expanded", "true");
+        openMenu(false);
       }
     }
 
     button.addEventListener("click", function () {
-      var willOpen = hiddenLinks.classList.contains("hidden");
-      hiddenLinks.classList.toggle("hidden", !willOpen);
-      button.classList.toggle("close", willOpen);
-      button.setAttribute("aria-expanded", willOpen ? "true" : "false");
+      var willOpen = button.getAttribute("aria-expanded") !== "true";
+
+      if (willOpen) {
+        openMenu(true);
+      } else {
+        closeMenu(true);
+      }
     });
 
     hiddenLinks.addEventListener("click", function (event) {
       if (event.target.closest("a")) {
-        closeMenu();
+        closeMenu(true);
       }
     });
 
     document.addEventListener("click", function (event) {
       if (!nav.contains(event.target)) {
-        closeMenu();
+        closeMenu(true);
       }
     });
 
     document.addEventListener("keydown", function (event) {
       if (event.key === "Escape") {
-        closeMenu();
+        closeMenu(true);
         button.focus();
       }
     });
@@ -98,45 +196,90 @@
     document.querySelectorAll(".pub-card__tldr-toggle").forEach(function (button) {
       var panel = document.getElementById(button.getAttribute("aria-controls"));
       var animation;
+      var animationSequence = 0;
 
       if (!panel) {
         return;
       }
 
-      button.addEventListener("click", function () {
-        var willExpand = button.getAttribute("aria-expanded") !== "true";
+      function readPanelFrame() {
+        var style = window.getComputedStyle(panel);
 
+        return {
+          height: panel.getBoundingClientRect().height + "px",
+          marginTop: style.marginTop,
+          paddingTop: style.paddingTop,
+          paddingBottom: style.paddingBottom,
+          opacity: style.opacity,
+          transform: style.transform === "none" ? "translateY(0)" : style.transform
+        };
+      }
+
+      function collapsedFrame() {
+        return {
+          height: "0px",
+          marginTop: "0px",
+          paddingTop: "0px",
+          paddingBottom: "0px",
+          opacity: 0,
+          transform: "translateY(-0.25rem)"
+        };
+      }
+
+      function stopAnimation() {
         if (animation) {
           animation.cancel();
+          animation = null;
         }
+      }
 
+      function animatePanel(startFrame, endFrame, expanding) {
+        var sequence = ++animationSequence;
+        var activeAnimation;
+
+        animation = panel.animate(
+          [startFrame, endFrame],
+          {
+            duration: expanding ? 210 : 170,
+            easing: expanding ? "cubic-bezier(0.2, 0.8, 0.2, 1)" : "cubic-bezier(0.4, 0, 1, 1)",
+            fill: "both"
+          }
+        );
+        activeAnimation = animation;
+
+        animation.addEventListener("finish", function () {
+          if (sequence !== animationSequence) {
+            return;
+          }
+
+          if (!expanding) {
+            panel.hidden = true;
+          }
+
+          activeAnimation.cancel();
+          animation = null;
+        }, { once: true });
+      }
+
+      button.addEventListener("click", function () {
+        var willExpand = button.getAttribute("aria-expanded") !== "true";
+        var currentFrame = panel.hidden ? null : readPanelFrame();
+
+        stopAnimation();
         button.setAttribute("aria-expanded", willExpand ? "true" : "false");
 
         if (willExpand) {
           panel.hidden = false;
 
-          if (!reduceMotion.matches && panel.animate) {
-            animation = panel.animate(
-              [
-                { opacity: 0, transform: "translateY(-0.25rem)" },
-                { opacity: 1, transform: "translateY(0)" }
-              ],
-              { duration: 180, easing: "ease-out" }
-            );
+          if (reduceMotion.matches || !panel.animate) {
+            return;
           }
-        } else if (reduceMotion.matches || !panel.animate) {
+
+          animatePanel(currentFrame || collapsedFrame(), readPanelFrame(), true);
+        } else if (panel.hidden || reduceMotion.matches || !panel.animate) {
           panel.hidden = true;
         } else {
-          animation = panel.animate(
-            [
-              { opacity: 1, transform: "translateY(0)" },
-              { opacity: 0, transform: "translateY(-0.2rem)" }
-            ],
-            { duration: 150, easing: "ease-in" }
-          );
-          animation.addEventListener("finish", function () {
-            panel.hidden = true;
-          }, { once: true });
+          animatePanel(currentFrame || readPanelFrame(), collapsedFrame(), false);
         }
       });
     });
