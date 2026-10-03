@@ -124,34 +124,35 @@
 
 @media (max-width: #{$medium - 1px}) {
   #main.home-main {
-    margin-top: 1.4rem;
+    margin-top: 0.9rem;
   }
 
   .home-profile {
     display: block;
-    margin-bottom: 2.1rem;
-    padding: 0 0 2rem;
+    margin-bottom: 1.4rem;
+    padding: 0 0 1.35rem;
     text-align: center;
   }
 
   .home-profile__avatar {
     margin-top: 0;
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.55rem;
   }
 
   .home-profile__avatar img {
-    width: 128px;
-    height: 128px;
+    width: 112px;
+    height: 112px;
     margin: 0 auto;
   }
 
   .home-profile__name {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .home-profile__role {
-    margin-bottom: 1.15rem;
+    margin-bottom: 0.8rem;
     font-size: 0.875rem;
+    line-height: 1.45;
 
     a {
       display: block;
@@ -164,15 +165,22 @@
 
   .home-profile__intro {
     text-align: left;
+
+    p {
+      margin-bottom: 0.55rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
   }
 
   .home-profile__links {
     justify-content: center;
     gap: 0.25rem 0.85rem;
+    margin-top: 0.7rem;
   }
 
   .home-profile__links a {
-    min-height: 44px;
+    min-height: 40px;
   }
 
   .home-profile__links a:nth-child(n + 4) {

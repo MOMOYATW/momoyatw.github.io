@@ -152,6 +152,18 @@
     button.close .navicon {
       background: transparent;
     }
+
+    @media (max-width: 767px) {
+      .navicon,
+      .navicon::before,
+      .navicon::after {
+        background: #a9bbc4;
+      }
+
+      button.close .navicon {
+        background: transparent;
+      }
+    }
   }
 
   html[data-theme="dark"] .masthead__brand img {

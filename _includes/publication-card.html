@@ -1,11 +1,7 @@
 {% include base_path %}
 
 {% assign pub = include.publication %}
-{% if pub.teaser %}
-  {% assign teaser = pub.teaser %}
-{% else %}
-  {% assign teaser = site.teaser | default: "500x300.png" %}
-{% endif %}
+{% assign teaser = pub.teaser %}
 
 <article class="pub-card">
   <div class="pub-card__teaser">

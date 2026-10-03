@@ -2,11 +2,9 @@
 ---
 
 /*
- *    Minimal Mistakes Jekyll Theme
+ *    Ye Tao academic homepage
  *
- *  - Michael Rose
- *  - mademistakes.com
- *  - https://twitter.com/mmistakes
+ *  Based on Academic Pages and Minimal Mistakes.
  *
 */
 
@@ -32,14 +30,11 @@
 
 @import "page";
 @import "home";
-@import "archive";
 @import "publications";
-@import "sidebar";
 
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
 @import "vendor/font-awesome/v4-shims";
-@import "vendor/magnific-popup/magnific-popup";
 @import "dark-mode";
 @import "print";

@@ -15,6 +15,10 @@ redirect_from:
 
 <ul class="news-list">
   <li>
+    <time datetime="2026-09">Sep 2026</time>
+    <span>🏆 Received the Outstanding Academic Performance Award from City University of Hong Kong.</span>
+  </li>
+  <li>
     <time datetime="2026-07">Jul 2026</time>
     <span>🎓 Passed my Ph.D. qualifying examination and advanced to candidacy.</span>
   </li>

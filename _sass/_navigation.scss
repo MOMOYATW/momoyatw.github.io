@@ -346,6 +346,38 @@
   }
 }
 
+@media (max-width: 767px) {
+  .greedy-nav button {
+    .navicon,
+    .navicon::before,
+    .navicon::after {
+      width: 24px;
+      height: 2px;
+      background: $primary-color;
+      border-radius: 999px;
+    }
+
+    .navicon::before {
+      top: -7px;
+    }
+
+    .navicon::after {
+      bottom: -7px;
+    }
+
+    &.close .navicon {
+      background: transparent;
+    }
+
+    &.close .navicon::before,
+    &.close .navicon::after {
+      top: 0;
+      bottom: auto;
+      width: 24px;
+    }
+  }
+}
+
 
 /*
    Navigation list
