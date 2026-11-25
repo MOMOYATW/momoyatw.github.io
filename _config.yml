@@ -39,6 +39,7 @@ social:
   links:
     - "https://scholar.google.com/citations?user=NfCKsjsAAAAJ&hl=en"
     - "https://github.com/momoyatw"
+    - "https://dblp.org/pid/84/4248-18.html"
     - "https://www.linkedin.com/in/ye-tao-418b30435"
     - "https://orcid.org/0009-0004-5923-0692"
 
@@ -54,6 +55,7 @@ author:
   googlescholar: "https://scholar.google.com/citations?user=NfCKsjsAAAAJ&hl=en"
   email: "ye.tao@my.cityu.edu.hk"
   github: "momoyatw"
+  dblp: "https://dblp.org/pid/84/4248-18.html"
   linkedin: "ye-tao-418b30435"
   orcid: "https://orcid.org/0009-0004-5923-0692"
 

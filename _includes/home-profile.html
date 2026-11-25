@@ -19,6 +19,7 @@
       {% if author.email %}<a href="mailto:{{ author.email }}" itemprop="email"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>{% endif %}
       {% if author.googlescholar %}<a href="{{ author.googlescholar }}" title="Google Scholar" itemprop="sameAs"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Scholar</a>{% endif %}
       {% if author.github %}<a href="https://github.com/{{ author.github }}" itemprop="sameAs"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>{% endif %}
+      {% if author.dblp %}<a href="{{ author.dblp }}" itemprop="sameAs"><i class="fas fa-book-open" aria-hidden="true"></i> DBLP</a>{% endif %}
       {% if author.linkedin %}<a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>{% endif %}
       {% if author.orcid %}<a href="{{ author.orcid }}" itemprop="sameAs"><i class="ai ai-orcid-square ai-fw" aria-hidden="true"></i> ORCID</a>{% endif %}
     </nav>
